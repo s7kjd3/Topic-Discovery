@@ -1,0 +1,1 @@
+This is a good idea but it lacks a sensitivity adjustment.  No matter where I set it it gives false alerts. It seems there was not much thought in making the product.

@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo3HRFPVRSU324HembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo3HRFPVRSU324Hrefresh_preplay() {
+
+document.getElementById("cv_mo3HRFPVRSU324HchiDiv").innerHTML = document.getElementById("cv_mo3HRFPVRSU324HhiddenPre").innerHTML;
+};
+cv_mo3HRFPVRSU324Hrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo3HRFPVRSU324Hso;	   
+
+
+function cv_mo3HRFPVRSU324HloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo3HRFPVRSU324Hso = new SWFObject(swfLocation, "cv_mo3HRFPVRSU324HAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo3HRFPVRSU324Hso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo3HRFPVRSU324Hso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo3HRFPVRSU324Hso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo3HRFPVRSU324Hso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo3HRFPVRSU324Hso.setAttribute("height", swfHeight);
+          cv_mo3HRFPVRSU324Hso.setAttribute("width", swfWidth);
+          cv_mo3HRFPVRSU324Hso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo3HRFPVRSU324Hso.write("cv_mo3HRFPVRSU324Hflashcontent")) {
+          fp_resizePlayerSpace('cv_mo3HRFPVRSU324H', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo3HRFPVRSU324H';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo3HRFPVRSU324H', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo3HRFPVRSU324HloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo3HRFPVRSU324H";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "mN44XBH2AHINU";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "mN44XBH2AHINU";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RGKROQM30VAVB";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/mN44XBH2AHINU/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo3HRFPVRSU324Hduration')) {
+      document.getElementById('cv_mo3HRFPVRSU324Hduration').style.display='none';
+    }
+    cv_mo3HRFPVRSU324HloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo3HRFPVRSU324HloadSwf(movieID, playerVersion) {
+   return _cv_mo3HRFPVRSU324HloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo3HRFPVRSU324HnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo3HRFPVRSU324H', 0, h);
+}
+
+function cv_mo3HRFPVRSU324HresetPlayer(w,h,bw,cc) {
+  cv_mo3HRFPVRSU324HnewHeight(h);
+
+  cv_mo3HRFPVRSU324Hso.addVariable("resetBandwidth", bw);
+  cv_mo3HRFPVRSU324Hso.addVariable("cacheCode", cc);
+  cv_mo3HRFPVRSU324Hso.setAttribute("height", h);
+  cv_mo3HRFPVRSU324Hso.setAttribute("width", w);
+  cv_mo3HRFPVRSU324Hso.write("cv_mo3HRFPVRSU324Hflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo3HRFPVRSU324HRollOverImg = new Image();
+cv_mo3HRFPVRSU324HRollOverImg.src = "http://ecx.images-amazon.com/images/I/81aVhChK%2BfS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo3HRFPVRSU324Hpreplay = document.getElementById('cv_mo3HRFPVRSU324HpreplayImageId');
+if (cv_mo3HRFPVRSU324Hpreplay) {
+  cv_mo3HRFPVRSU324Hpreplay.onmouseover = function() {
+    cv_mo3HRFPVRSU324Hpreplay.src = "http://ecx.images-amazon.com/images/I/81aVhChK%2BfS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo3HRFPVRSU324Hpreplay.onmouseout = function() {
+    cv_mo3HRFPVRSU324Hpreplay.src = "http://ecx.images-amazon.com/images/I/81aVhChK%2BfS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo3HRFPVRSU324Hpreplay.parentNode;
+
+  var cv_mo3HRFPVRSU324HcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo3HRFPVRSU324HcurrentClick) {
+      return cv_mo3HRFPVRSU324HcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 9:45 MinsMy video is both a test and review of PanaVise 809 for those who are looking for a mount to attach their small camcorders with the windshield of a car. It is almost 10 minutes in duration. You can make your own judgment by watching the video and hearing my comments. The only thing I would like to add is beware of imitation. Buy direct from the company or from Amazon.com.EDIT (May 1, 2010): An extension arm for the device can be obtained for FREE by calling PanaVise. I recently got mine from PanaVise and it just works great. I do not have to mount my camcorder upside down anymore. You can see my video on this on YouTube. Just search for "PanaVise 809 Test #2 (with the extension arm)".

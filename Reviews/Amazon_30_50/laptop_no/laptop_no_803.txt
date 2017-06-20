@@ -1,0 +1,1 @@
+What's more, it has an NVIDIA GPU, on which I could test my CUDA programs! Marvelous! The only issue is that it's without a mouse. So remember buying a mouse along with it.

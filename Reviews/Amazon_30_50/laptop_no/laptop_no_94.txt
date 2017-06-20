@@ -1,0 +1,1 @@
+Had an issue with system sleeping and not waking but fixed it and all is better. It turns out the one of the ram cards was bad and causing the fault. found the problem after second use.

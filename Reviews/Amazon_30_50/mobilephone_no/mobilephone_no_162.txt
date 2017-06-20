@@ -1,0 +1,1 @@
+A Nokia E63 bought in October 2009 developed a power cycling problem. It keeps turning itself off all the time, although the battery is fully charged. Master reset did not solve the problem. Maybe operating system error, or bad memory blocks?

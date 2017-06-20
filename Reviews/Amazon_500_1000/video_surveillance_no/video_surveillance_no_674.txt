@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo183UX2K7GOAUWembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo183UX2K7GOAUWrefresh_preplay() {
+
+document.getElementById("cv_mo183UX2K7GOAUWchiDiv").innerHTML = document.getElementById("cv_mo183UX2K7GOAUWhiddenPre").innerHTML;
+};
+cv_mo183UX2K7GOAUWrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo183UX2K7GOAUWso;	   
+
+
+function cv_mo183UX2K7GOAUWloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo183UX2K7GOAUWso = new SWFObject(swfLocation, "cv_mo183UX2K7GOAUWAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo183UX2K7GOAUWso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo183UX2K7GOAUWso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo183UX2K7GOAUWso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo183UX2K7GOAUWso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo183UX2K7GOAUWso.setAttribute("height", swfHeight);
+          cv_mo183UX2K7GOAUWso.setAttribute("width", swfWidth);
+          cv_mo183UX2K7GOAUWso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo183UX2K7GOAUWso.write("cv_mo183UX2K7GOAUWflashcontent")) {
+          fp_resizePlayerSpace('cv_mo183UX2K7GOAUW', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo183UX2K7GOAUW';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo183UX2K7GOAUW', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo183UX2K7GOAUWloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo183UX2K7GOAUW";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1D6F02H11GBL0";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1D6F02H11GBL0";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RAO6KD6G9P3WG";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1D6F02H11GBL0/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo183UX2K7GOAUWduration')) {
+      document.getElementById('cv_mo183UX2K7GOAUWduration').style.display='none';
+    }
+    cv_mo183UX2K7GOAUWloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo183UX2K7GOAUWloadSwf(movieID, playerVersion) {
+   return _cv_mo183UX2K7GOAUWloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo183UX2K7GOAUWnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo183UX2K7GOAUW', 0, h);
+}
+
+function cv_mo183UX2K7GOAUWresetPlayer(w,h,bw,cc) {
+  cv_mo183UX2K7GOAUWnewHeight(h);
+
+  cv_mo183UX2K7GOAUWso.addVariable("resetBandwidth", bw);
+  cv_mo183UX2K7GOAUWso.addVariable("cacheCode", cc);
+  cv_mo183UX2K7GOAUWso.setAttribute("height", h);
+  cv_mo183UX2K7GOAUWso.setAttribute("width", w);
+  cv_mo183UX2K7GOAUWso.write("cv_mo183UX2K7GOAUWflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo183UX2K7GOAUWRollOverImg = new Image();
+cv_mo183UX2K7GOAUWRollOverImg.src = "http://ecx.images-amazon.com/images/I/81ru4qeJfRS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo183UX2K7GOAUWpreplay = document.getElementById('cv_mo183UX2K7GOAUWpreplayImageId');
+if (cv_mo183UX2K7GOAUWpreplay) {
+  cv_mo183UX2K7GOAUWpreplay.onmouseover = function() {
+    cv_mo183UX2K7GOAUWpreplay.src = "http://ecx.images-amazon.com/images/I/81ru4qeJfRS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo183UX2K7GOAUWpreplay.onmouseout = function() {
+    cv_mo183UX2K7GOAUWpreplay.src = "http://ecx.images-amazon.com/images/I/81ru4qeJfRS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo183UX2K7GOAUWpreplay.parentNode;
+
+  var cv_mo183UX2K7GOAUWcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo183UX2K7GOAUWcurrentClick) {
+      return cv_mo183UX2K7GOAUWcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:44 MinsUpdate: It is sad to see several painfully obvious fake/paid reviews for this item. Buyer beware! I can tell you that I have attempted to work with Foscam support on several occasions and it was not the wonderful experience all these "reviews" have made it out to be. Both email and phone support was horrible and useless. I still have the same problem and would not dare waste any more time with Foscam support.These cameras are fine for the price point. Nothing to rave about. The browser controls are quirky and take way too much fuss to get email, ftp or recording setup. These areas need to be seriously revamped. I have three of these things bought from Amazon and they all have the same issue. Each night when they switch to night mode they begin to flicker, this is the best way I can describe it. It cannot be seen with your naked eye but when viewed through any software or browser it looks as if it is switching from IR on to off. The only way to resolve it is to login via the browser and change the resolution and then set it back to where you had it. This somehow stops the odd behavior. I have tried to contact Foscam support but waiting for 1.5 hours on hold is beyond ridiculous and I eventually just give up.

@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moUDCT80HA0MFAembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moUDCT80HA0MFArefresh_preplay() {
+
+document.getElementById("cv_moUDCT80HA0MFAchiDiv").innerHTML = document.getElementById("cv_moUDCT80HA0MFAhiddenPre").innerHTML;
+};
+cv_moUDCT80HA0MFArefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moUDCT80HA0MFAso;	   
+
+
+function cv_moUDCT80HA0MFAloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moUDCT80HA0MFAso = new SWFObject(swfLocation, "cv_moUDCT80HA0MFAAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moUDCT80HA0MFAso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moUDCT80HA0MFAso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moUDCT80HA0MFAso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moUDCT80HA0MFAso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moUDCT80HA0MFAso.setAttribute("height", swfHeight);
+          cv_moUDCT80HA0MFAso.setAttribute("width", swfWidth);
+          cv_moUDCT80HA0MFAso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moUDCT80HA0MFAso.write("cv_moUDCT80HA0MFAflashcontent")) {
+          fp_resizePlayerSpace('cv_moUDCT80HA0MFA', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moUDCT80HA0MFA';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moUDCT80HA0MFA', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moUDCT80HA0MFAloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moUDCT80HA0MFA";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3M4QRTI5WDLBU";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3M4QRTI5WDLBU";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R27NRNLUOEN902";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3M4QRTI5WDLBU/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moUDCT80HA0MFAduration')) {
+      document.getElementById('cv_moUDCT80HA0MFAduration').style.display='none';
+    }
+    cv_moUDCT80HA0MFAloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moUDCT80HA0MFAloadSwf(movieID, playerVersion) {
+   return _cv_moUDCT80HA0MFAloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moUDCT80HA0MFAnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moUDCT80HA0MFA', 0, h);
+}
+
+function cv_moUDCT80HA0MFAresetPlayer(w,h,bw,cc) {
+  cv_moUDCT80HA0MFAnewHeight(h);
+
+  cv_moUDCT80HA0MFAso.addVariable("resetBandwidth", bw);
+  cv_moUDCT80HA0MFAso.addVariable("cacheCode", cc);
+  cv_moUDCT80HA0MFAso.setAttribute("height", h);
+  cv_moUDCT80HA0MFAso.setAttribute("width", w);
+  cv_moUDCT80HA0MFAso.write("cv_moUDCT80HA0MFAflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moUDCT80HA0MFARollOverImg = new Image();
+cv_moUDCT80HA0MFARollOverImg.src = "http://ecx.images-amazon.com/images/I/81Hu2J1uwKS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moUDCT80HA0MFApreplay = document.getElementById('cv_moUDCT80HA0MFApreplayImageId');
+if (cv_moUDCT80HA0MFApreplay) {
+  cv_moUDCT80HA0MFApreplay.onmouseover = function() {
+    cv_moUDCT80HA0MFApreplay.src = "http://ecx.images-amazon.com/images/I/81Hu2J1uwKS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moUDCT80HA0MFApreplay.onmouseout = function() {
+    cv_moUDCT80HA0MFApreplay.src = "http://ecx.images-amazon.com/images/I/81Hu2J1uwKS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moUDCT80HA0MFApreplay.parentNode;
+
+  var cv_moUDCT80HA0MFAcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moUDCT80HA0MFAcurrentClick) {
+      return cv_moUDCT80HA0MFAcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 6:34 MinsWindows laptops at this price point tend to feel like commodities, and this Sony notebook is no exception to that rule. While Sony has some nice hardware at the higher end of the market, this one doesn't feel like anything special.My biggest gripe lies with the poor touch pad that tries to mirror the look and feel of Apple's excellent multitouch pads but falls very short of that mark. It frequently gets tripped up if two fingers are in contact with the pad simultaneously, and the menu options to adjust settings are confusing. I still haven't figured out how to reverse the scroll direction.  The touch surface is not very precise (making fine movements difficult) and the clicking action is squishy. The keyboard suffers from a similar squishiness.The Vaio Fit does include a touch screen, which in comparison to the touchpad is fluid and very precise. It complements the included Windows 8 operating system quite well. The touch surface, unfortunately, takes some sharpness and brightness away from the screen. It's also possible to see the grid of the touch sensors when in bright direct light.I am pleased with the horsepower for general productivity applications. It has one of the newest i7 processors along with 8 gigabytes of RAM. Web browsing, email, and other non-gaming activities were very fast and responsive.The Vaio Fit is not a gaming PC, however. The Intel 4000 graphics chipset it comes with is not well suited for high-end games so I would avoid purchasing one for the gamer in your life.I did not experience the WiFi range issues other reviewers have seen. But I did encounter an odd issue that I couldn't repeat but resulted in severely limiting network performance for everyone else in my house until I shut the Sony down. This occurred when downloading a large file from the Steam game service.So the bottom line? This is an adequate middle of the road PC that's not much different than other Windows machines at this price point.

@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1HKKTX7P2V3ZIembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1HKKTX7P2V3ZIrefresh_preplay() {
+
+document.getElementById("cv_mo1HKKTX7P2V3ZIchiDiv").innerHTML = document.getElementById("cv_mo1HKKTX7P2V3ZIhiddenPre").innerHTML;
+};
+cv_mo1HKKTX7P2V3ZIrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1HKKTX7P2V3ZIso;	   
+
+
+function cv_mo1HKKTX7P2V3ZIloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1HKKTX7P2V3ZIso = new SWFObject(swfLocation, "cv_mo1HKKTX7P2V3ZIAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1HKKTX7P2V3ZIso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1HKKTX7P2V3ZIso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1HKKTX7P2V3ZIso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1HKKTX7P2V3ZIso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1HKKTX7P2V3ZIso.setAttribute("height", swfHeight);
+          cv_mo1HKKTX7P2V3ZIso.setAttribute("width", swfWidth);
+          cv_mo1HKKTX7P2V3ZIso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1HKKTX7P2V3ZIso.write("cv_mo1HKKTX7P2V3ZIflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1HKKTX7P2V3ZI', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1HKKTX7P2V3ZI';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1HKKTX7P2V3ZI', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1HKKTX7P2V3ZIloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1HKKTX7P2V3ZI";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m2M1EWZG4KIUP1";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m2M1EWZG4KIUP1";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R14LRZAXTZENR0";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m2M1EWZG4KIUP1/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1HKKTX7P2V3ZIduration')) {
+      document.getElementById('cv_mo1HKKTX7P2V3ZIduration').style.display='none';
+    }
+    cv_mo1HKKTX7P2V3ZIloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1HKKTX7P2V3ZIloadSwf(movieID, playerVersion) {
+   return _cv_mo1HKKTX7P2V3ZIloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1HKKTX7P2V3ZInewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1HKKTX7P2V3ZI', 0, h);
+}
+
+function cv_mo1HKKTX7P2V3ZIresetPlayer(w,h,bw,cc) {
+  cv_mo1HKKTX7P2V3ZInewHeight(h);
+
+  cv_mo1HKKTX7P2V3ZIso.addVariable("resetBandwidth", bw);
+  cv_mo1HKKTX7P2V3ZIso.addVariable("cacheCode", cc);
+  cv_mo1HKKTX7P2V3ZIso.setAttribute("height", h);
+  cv_mo1HKKTX7P2V3ZIso.setAttribute("width", w);
+  cv_mo1HKKTX7P2V3ZIso.write("cv_mo1HKKTX7P2V3ZIflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1HKKTX7P2V3ZIRollOverImg = new Image();
+cv_mo1HKKTX7P2V3ZIRollOverImg.src = "http://ecx.images-amazon.com/images/I/813LdHBxh5S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1HKKTX7P2V3ZIpreplay = document.getElementById('cv_mo1HKKTX7P2V3ZIpreplayImageId');
+if (cv_mo1HKKTX7P2V3ZIpreplay) {
+  cv_mo1HKKTX7P2V3ZIpreplay.onmouseover = function() {
+    cv_mo1HKKTX7P2V3ZIpreplay.src = "http://ecx.images-amazon.com/images/I/813LdHBxh5S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1HKKTX7P2V3ZIpreplay.onmouseout = function() {
+    cv_mo1HKKTX7P2V3ZIpreplay.src = "http://ecx.images-amazon.com/images/I/813LdHBxh5S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1HKKTX7P2V3ZIpreplay.parentNode;
+
+  var cv_mo1HKKTX7P2V3ZIcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1HKKTX7P2V3ZIcurrentClick) {
+      return cv_mo1HKKTX7P2V3ZIcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 2:46 MinsI decided on this TV because of the terrific price of it offered by Amazon (compared to Crutchfield an Vanns).The first delivery was a disaster because the panel was cracked in several places.  My other 50in 2010 Samsung had the same issue with the first delivery.  So be warned that Samsung is not packing these sets well given their thinness.  Another bummer was the set is made in Mexico and not Japan or Korea.However that has been it.  The picture quality is superb in 2D with all sources.  Even SD looks good.  The speakers are not great on the set but are serviceable.This TV loves HD sources!  You will be amazed.  There are four HDMI inputs.TV is very thin with a dark grey bezel (not the 8000 titanium).I have not tried 3D yet.  Waiting for glasses to lower in price and to get a 3D Blu Ray player.All plasmas buzz to some degree and volume level.  My set buzzes when a show is paused (DVR), but can't be heard otherwise.  Some buzz so loud others return is (common plasma problem) - it is a crap shoot.Important notes:- make sure to update the sets firmware to the latest version (1025+), this will improve the 2D and 3D.- break in the set by running a variable signal for 25-50 hours (constantly moving images - no ESPN) this will help reduce Burn in problems- consider updating the set to C8000 model via the service menu, you will get all the 8000 features for free (like Cinema Smooth)

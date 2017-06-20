@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1KCQVEEEP31KLembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1KCQVEEEP31KLrefresh_preplay() {
+
+document.getElementById("cv_mo1KCQVEEEP31KLchiDiv").innerHTML = document.getElementById("cv_mo1KCQVEEEP31KLhiddenPre").innerHTML;
+};
+cv_mo1KCQVEEEP31KLrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1KCQVEEEP31KLso;	   
+
+
+function cv_mo1KCQVEEEP31KLloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1KCQVEEEP31KLso = new SWFObject(swfLocation, "cv_mo1KCQVEEEP31KLAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1KCQVEEEP31KLso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1KCQVEEEP31KLso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1KCQVEEEP31KLso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1KCQVEEEP31KLso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1KCQVEEEP31KLso.setAttribute("height", swfHeight);
+          cv_mo1KCQVEEEP31KLso.setAttribute("width", swfWidth);
+          cv_mo1KCQVEEEP31KLso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1KCQVEEEP31KLso.write("cv_mo1KCQVEEEP31KLflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1KCQVEEEP31KL', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1KCQVEEEP31KL';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1KCQVEEEP31KL', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1KCQVEEEP31KLloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1KCQVEEEP31KL";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m23QOI84UM43CI";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m23QOI84UM43CI";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RXBAVUMK46CL6";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m23QOI84UM43CI/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1KCQVEEEP31KLduration')) {
+      document.getElementById('cv_mo1KCQVEEEP31KLduration').style.display='none';
+    }
+    cv_mo1KCQVEEEP31KLloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1KCQVEEEP31KLloadSwf(movieID, playerVersion) {
+   return _cv_mo1KCQVEEEP31KLloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1KCQVEEEP31KLnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1KCQVEEEP31KL', 0, h);
+}
+
+function cv_mo1KCQVEEEP31KLresetPlayer(w,h,bw,cc) {
+  cv_mo1KCQVEEEP31KLnewHeight(h);
+
+  cv_mo1KCQVEEEP31KLso.addVariable("resetBandwidth", bw);
+  cv_mo1KCQVEEEP31KLso.addVariable("cacheCode", cc);
+  cv_mo1KCQVEEEP31KLso.setAttribute("height", h);
+  cv_mo1KCQVEEEP31KLso.setAttribute("width", w);
+  cv_mo1KCQVEEEP31KLso.write("cv_mo1KCQVEEEP31KLflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1KCQVEEEP31KLRollOverImg = new Image();
+cv_mo1KCQVEEEP31KLRollOverImg.src = "http://ecx.images-amazon.com/images/I/71kyIl5eJfS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1KCQVEEEP31KLpreplay = document.getElementById('cv_mo1KCQVEEEP31KLpreplayImageId');
+if (cv_mo1KCQVEEEP31KLpreplay) {
+  cv_mo1KCQVEEEP31KLpreplay.onmouseover = function() {
+    cv_mo1KCQVEEEP31KLpreplay.src = "http://ecx.images-amazon.com/images/I/71kyIl5eJfS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1KCQVEEEP31KLpreplay.onmouseout = function() {
+    cv_mo1KCQVEEEP31KLpreplay.src = "http://ecx.images-amazon.com/images/I/71kyIl5eJfS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1KCQVEEEP31KLpreplay.parentNode;
+
+  var cv_mo1KCQVEEEP31KLcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1KCQVEEEP31KLcurrentClick) {
+      return cv_mo1KCQVEEEP31KLcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:04 MinsI'd like to smack the designers in the noggin, because focusing this surprisingly well made chinese camera gave me a headache.Mine came with a tiny CD and a quick start guide and installation screws and those usually useless plastic screw-in thingies and a template. It has a tiny fan, but there's no heater. If you can hear that little fan outside then your hearing is Superman quality. I changed the cable routing from the rear to the side. It was kinda scary at first, but it only took around 15 minutes to do. This is my third Dahua camera. There's no marking on the camera fwiw. Oh.. The discovery (camera ip 192.168.1.108 with user/password: admin/admin) cd software was in a strange z format. View [...] for related Dahua software. I'd like to give it 4.5 stars, because focusing it really is a pita and warranty support/firmware upgrades are unlikely in the future. Version Device Type IPC-HDBW3300 Software Version 2.103.0000.0.R, build : 2012-07-24 WEB Version 3.0.0.0 - My camera has W-IPV5300 printed on the box, but HDBW3300 printed on the circuit board. The lens is 3.3 -12 mm. The back plate is screwed into the main body with three (3) allen headed screws. Four (4) phillips head screws (I think) attach the backplate to its mounting location. Three allen headed (3) screws attach the plastic dome to the waterproof body. The zoom and focus screws are the small straight driver type. A Phillips head screw secures the dome to the body.

@@ -1,0 +1,1 @@
+Download the new TV's firmware upgrade of from Sony's web page, copy it to a flash drive, insert it in the USB port in the back of the TV, and the dim problem will be solved.

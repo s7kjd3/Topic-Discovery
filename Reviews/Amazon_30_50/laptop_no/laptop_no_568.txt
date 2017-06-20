@@ -1,0 +1,1 @@
+When I go to my control panel and look for graphics all I see is Intel and nothing but Intel. There is nothing on my computer related to Nvidia. I have tried to update drivers and nothing has worked so far.

@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moVXZOUD4TWIKOembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moVXZOUD4TWIKOrefresh_preplay() {
+
+document.getElementById("cv_moVXZOUD4TWIKOchiDiv").innerHTML = document.getElementById("cv_moVXZOUD4TWIKOhiddenPre").innerHTML;
+};
+cv_moVXZOUD4TWIKOrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moVXZOUD4TWIKOso;	   
+
+
+function cv_moVXZOUD4TWIKOloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moVXZOUD4TWIKOso = new SWFObject(swfLocation, "cv_moVXZOUD4TWIKOAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moVXZOUD4TWIKOso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moVXZOUD4TWIKOso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moVXZOUD4TWIKOso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moVXZOUD4TWIKOso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moVXZOUD4TWIKOso.setAttribute("height", swfHeight);
+          cv_moVXZOUD4TWIKOso.setAttribute("width", swfWidth);
+          cv_moVXZOUD4TWIKOso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moVXZOUD4TWIKOso.write("cv_moVXZOUD4TWIKOflashcontent")) {
+          fp_resizePlayerSpace('cv_moVXZOUD4TWIKO', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moVXZOUD4TWIKO';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moVXZOUD4TWIKO', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moVXZOUD4TWIKOloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moVXZOUD4TWIKO";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1QW9XP783S1WH";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1QW9XP783S1WH";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R29ZZPLSNDJH7N";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1QW9XP783S1WH/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moVXZOUD4TWIKOduration')) {
+      document.getElementById('cv_moVXZOUD4TWIKOduration').style.display='none';
+    }
+    cv_moVXZOUD4TWIKOloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moVXZOUD4TWIKOloadSwf(movieID, playerVersion) {
+   return _cv_moVXZOUD4TWIKOloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moVXZOUD4TWIKOnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moVXZOUD4TWIKO', 0, h);
+}
+
+function cv_moVXZOUD4TWIKOresetPlayer(w,h,bw,cc) {
+  cv_moVXZOUD4TWIKOnewHeight(h);
+
+  cv_moVXZOUD4TWIKOso.addVariable("resetBandwidth", bw);
+  cv_moVXZOUD4TWIKOso.addVariable("cacheCode", cc);
+  cv_moVXZOUD4TWIKOso.setAttribute("height", h);
+  cv_moVXZOUD4TWIKOso.setAttribute("width", w);
+  cv_moVXZOUD4TWIKOso.write("cv_moVXZOUD4TWIKOflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moVXZOUD4TWIKORollOverImg = new Image();
+cv_moVXZOUD4TWIKORollOverImg.src = "http://ecx.images-amazon.com/images/I/91ACByi7GlS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moVXZOUD4TWIKOpreplay = document.getElementById('cv_moVXZOUD4TWIKOpreplayImageId');
+if (cv_moVXZOUD4TWIKOpreplay) {
+  cv_moVXZOUD4TWIKOpreplay.onmouseover = function() {
+    cv_moVXZOUD4TWIKOpreplay.src = "http://ecx.images-amazon.com/images/I/91ACByi7GlS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moVXZOUD4TWIKOpreplay.onmouseout = function() {
+    cv_moVXZOUD4TWIKOpreplay.src = "http://ecx.images-amazon.com/images/I/91ACByi7GlS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moVXZOUD4TWIKOpreplay.parentNode;
+
+  var cv_moVXZOUD4TWIKOcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moVXZOUD4TWIKOcurrentClick) {
+      return cv_moVXZOUD4TWIKOcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:26 MinsSummary: Great unit for the money with decent video quality. Can't go wrong for the price! Below is some useful information on the machine.Storage Card Data (Continuous Recording Mode):On continuous recording mode the DVR will breakup the recordings into 30 minute sections. I found the motion sensor is not to accurate and has too much delay to be trusted. Thus, I prefer continuous mode. One commenter mentioned getting 9 days of recording on a 32GB card. I have done multiple tests and that is just not the case: not even close.QVGA Data = .8GB's Per 1 Hour of Video = 40 Hours on 32GB SD CardQVGA Mode (lowest quality) will more then doubles the storage space and the image quality is not much different from the VGA mode (highest quality). See video for comparison. Testing results equated to about .8GB's per 1 hour of video footage. This equates to about 40 hours of continuous recordings on a 32GB card. On my test I got about 22 hours of footage which took up 17.8GB on the card. The files are easy to navigate (see attached image).VGA Data = 2GB's Per 1 Hour of Video = 16 Hours on 32GB SD CardVGA Mode (highest quality) uses a lot of space at about 2GB's per 1 hour of footage. This equates to about 16 hours of continuous recordings on a 32GB card. My test got about 2 hours of footage that took up over 4.16GB on the card. Not recommended.USB Card: Make sure to click "safely remove hardware" for the SD Card every time you use the card on the PC. If you do this the card will work flawlessly with the unit. You could also use Notebook to make a simple system.txt to improve the image quality (see J.P.'s review for more info).Menu: Pretty easy to navigate with wheel. Just make sure that you press the wheel into the unit while making selections (took me a while to figure out). See video for what the menu system looks like and how to use the wheel.Update: Once the video card fills up it will automatically erase the oldest file and replace with the current recording. If recording continuously, this gives you a backup of 40 hours at all times. This product is even better then I originally thought. Instead of having to erase the card every day or so, it does it automatically. That is not mentioned in the manual. COOL! Five Stars!

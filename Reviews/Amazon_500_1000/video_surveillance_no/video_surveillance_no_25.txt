@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_14985111embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_14985111refresh_preplay() {
+
+document.getElementById("cv_14985111chiDiv").innerHTML = document.getElementById("cv_14985111hiddenPre").innerHTML;
+};
+cv_14985111refresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_14985111so;	   
+
+
+function cv_14985111loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_14985111so = new SWFObject(swfLocation, "cv_14985111AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_14985111so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_14985111so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_14985111so.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_14985111so.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_14985111so.setAttribute("height", swfHeight);
+          cv_14985111so.setAttribute("width", swfWidth);
+          cv_14985111so.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_14985111so.write("cv_14985111flashcontent")) {
+          fp_resizePlayerSpace('cv_14985111', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_14985111';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_14985111', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_14985111loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_14985111";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3B5M3DC5950LI";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3B5M3DC5950LI";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2T9QEXNSRK5I1";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3B5M3DC5950LI/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_14985111duration')) {
+      document.getElementById('cv_14985111duration').style.display='none';
+    }
+    cv_14985111loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_14985111loadSwf(movieID, playerVersion) {
+   return _cv_14985111loadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_14985111newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_14985111', 0, h);
+}
+
+function cv_14985111resetPlayer(w,h,bw,cc) {
+  cv_14985111newHeight(h);
+
+  cv_14985111so.addVariable("resetBandwidth", bw);
+  cv_14985111so.addVariable("cacheCode", cc);
+  cv_14985111so.setAttribute("height", h);
+  cv_14985111so.setAttribute("width", w);
+  cv_14985111so.write("cv_14985111flashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_14985111RollOverImg = new Image();
+cv_14985111RollOverImg.src = "http://ecx.images-amazon.com/images/I/81cV0gm9noS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_14985111preplay = document.getElementById('cv_14985111preplayImageId');
+if (cv_14985111preplay) {
+  cv_14985111preplay.onmouseover = function() {
+    cv_14985111preplay.src = "http://ecx.images-amazon.com/images/I/81cV0gm9noS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_14985111preplay.onmouseout = function() {
+    cv_14985111preplay.src = "http://ecx.images-amazon.com/images/I/81cV0gm9noS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_14985111preplay.parentNode;
+
+  var cv_14985111currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_14985111currentClick) {
+      return cv_14985111currentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:19 MinsThe Panasonic BL-C131A Network Camera Wireless 802.11 is used all over my house as a nanny cam and I recently used it while traveling to see my family as they got together in the kitchen. Great tool for bringing people closer.

@@ -1,0 +1,1 @@
+It is sufficient just for surveillance.  I can not get it to work in real time mode, where I can view (nearly) live what the camera is viewing.  I can only view prerecorded images.

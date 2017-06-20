@@ -1,0 +1,1 @@
+The system is preinstalled with Windows 8. Configuring and cleanup took very little time. However, downloading and installing all of the updates and then migration to Windows 8.1 took the rest of the day.

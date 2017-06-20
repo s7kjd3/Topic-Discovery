@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moIB18UFTYAWWUembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moIB18UFTYAWWUrefresh_preplay() {
+
+document.getElementById("cv_moIB18UFTYAWWUchiDiv").innerHTML = document.getElementById("cv_moIB18UFTYAWWUhiddenPre").innerHTML;
+};
+cv_moIB18UFTYAWWUrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moIB18UFTYAWWUso;	   
+
+
+function cv_moIB18UFTYAWWUloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moIB18UFTYAWWUso = new SWFObject(swfLocation, "cv_moIB18UFTYAWWUAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moIB18UFTYAWWUso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moIB18UFTYAWWUso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moIB18UFTYAWWUso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moIB18UFTYAWWUso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moIB18UFTYAWWUso.setAttribute("height", swfHeight);
+          cv_moIB18UFTYAWWUso.setAttribute("width", swfWidth);
+          cv_moIB18UFTYAWWUso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moIB18UFTYAWWUso.write("cv_moIB18UFTYAWWUflashcontent")) {
+          fp_resizePlayerSpace('cv_moIB18UFTYAWWU', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moIB18UFTYAWWU';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moIB18UFTYAWWU', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moIB18UFTYAWWUloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moIB18UFTYAWWU";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3B5PEJ94QQZQI";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3B5PEJ94QQZQI";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R1HPW2G0V6GIFJ";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3B5PEJ94QQZQI/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moIB18UFTYAWWUduration')) {
+      document.getElementById('cv_moIB18UFTYAWWUduration').style.display='none';
+    }
+    cv_moIB18UFTYAWWUloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moIB18UFTYAWWUloadSwf(movieID, playerVersion) {
+   return _cv_moIB18UFTYAWWUloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moIB18UFTYAWWUnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moIB18UFTYAWWU', 0, h);
+}
+
+function cv_moIB18UFTYAWWUresetPlayer(w,h,bw,cc) {
+  cv_moIB18UFTYAWWUnewHeight(h);
+
+  cv_moIB18UFTYAWWUso.addVariable("resetBandwidth", bw);
+  cv_moIB18UFTYAWWUso.addVariable("cacheCode", cc);
+  cv_moIB18UFTYAWWUso.setAttribute("height", h);
+  cv_moIB18UFTYAWWUso.setAttribute("width", w);
+  cv_moIB18UFTYAWWUso.write("cv_moIB18UFTYAWWUflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moIB18UFTYAWWURollOverImg = new Image();
+cv_moIB18UFTYAWWURollOverImg.src = "http://ecx.images-amazon.com/images/I/81rb-fTAaDS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moIB18UFTYAWWUpreplay = document.getElementById('cv_moIB18UFTYAWWUpreplayImageId');
+if (cv_moIB18UFTYAWWUpreplay) {
+  cv_moIB18UFTYAWWUpreplay.onmouseover = function() {
+    cv_moIB18UFTYAWWUpreplay.src = "http://ecx.images-amazon.com/images/I/81rb-fTAaDS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moIB18UFTYAWWUpreplay.onmouseout = function() {
+    cv_moIB18UFTYAWWUpreplay.src = "http://ecx.images-amazon.com/images/I/81rb-fTAaDS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moIB18UFTYAWWUpreplay.parentNode;
+
+  var cv_moIB18UFTYAWWUcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moIB18UFTYAWWUcurrentClick) {
+      return cv_moIB18UFTYAWWUcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 2:14 MinsMaybe it's a dud. Can't be found on my LAN. Lan is a standard setup 192.168.1.1 cam powers up, green light on in the front, network activity is indicated on the cam above it's Ethernet jack, solid green and semi blinking yellow indicator lights.Netgear router indicates a device plugged into port 3 and 4 (i tried both) but the router could not see the cam, nor could the factory software that came with the cam. Also tried the device find software from another pc on my network with the same results.

@@ -1,0 +1,1 @@
+The USB ports do not recognize the mouse, or the wireless antennae or any storage device. I have to take it in for repair. The message says the drivers are not installed. How does this get done? I am very frustrated and disappointed. Is this a Windows 7 problem?

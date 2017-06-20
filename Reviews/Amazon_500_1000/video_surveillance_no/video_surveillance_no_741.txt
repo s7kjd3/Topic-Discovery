@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1H4YXBOAFRRUUembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1H4YXBOAFRRUUrefresh_preplay() {
+
+document.getElementById("cv_mo1H4YXBOAFRRUUchiDiv").innerHTML = document.getElementById("cv_mo1H4YXBOAFRRUUhiddenPre").innerHTML;
+};
+cv_mo1H4YXBOAFRRUUrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1H4YXBOAFRRUUso;	   
+
+
+function cv_mo1H4YXBOAFRRUUloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1H4YXBOAFRRUUso = new SWFObject(swfLocation, "cv_mo1H4YXBOAFRRUUAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1H4YXBOAFRRUUso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1H4YXBOAFRRUUso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1H4YXBOAFRRUUso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1H4YXBOAFRRUUso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1H4YXBOAFRRUUso.setAttribute("height", swfHeight);
+          cv_mo1H4YXBOAFRRUUso.setAttribute("width", swfWidth);
+          cv_mo1H4YXBOAFRRUUso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1H4YXBOAFRRUUso.write("cv_mo1H4YXBOAFRRUUflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1H4YXBOAFRRUU', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1H4YXBOAFRRUU';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1H4YXBOAFRRUU', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1H4YXBOAFRRUUloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1H4YXBOAFRRUU";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3UGTFAW6BT4K4";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3UGTFAW6BT4K4";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R3VSSBXHY643QL";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3UGTFAW6BT4K4/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1H4YXBOAFRRUUduration')) {
+      document.getElementById('cv_mo1H4YXBOAFRRUUduration').style.display='none';
+    }
+    cv_mo1H4YXBOAFRRUUloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1H4YXBOAFRRUUloadSwf(movieID, playerVersion) {
+   return _cv_mo1H4YXBOAFRRUUloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1H4YXBOAFRRUUnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1H4YXBOAFRRUU', 0, h);
+}
+
+function cv_mo1H4YXBOAFRRUUresetPlayer(w,h,bw,cc) {
+  cv_mo1H4YXBOAFRRUUnewHeight(h);
+
+  cv_mo1H4YXBOAFRRUUso.addVariable("resetBandwidth", bw);
+  cv_mo1H4YXBOAFRRUUso.addVariable("cacheCode", cc);
+  cv_mo1H4YXBOAFRRUUso.setAttribute("height", h);
+  cv_mo1H4YXBOAFRRUUso.setAttribute("width", w);
+  cv_mo1H4YXBOAFRRUUso.write("cv_mo1H4YXBOAFRRUUflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1H4YXBOAFRRUURollOverImg = new Image();
+cv_mo1H4YXBOAFRRUURollOverImg.src = "http://ecx.images-amazon.com/images/I/71X03FlvgkS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1H4YXBOAFRRUUpreplay = document.getElementById('cv_mo1H4YXBOAFRRUUpreplayImageId');
+if (cv_mo1H4YXBOAFRRUUpreplay) {
+  cv_mo1H4YXBOAFRRUUpreplay.onmouseover = function() {
+    cv_mo1H4YXBOAFRRUUpreplay.src = "http://ecx.images-amazon.com/images/I/71X03FlvgkS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1H4YXBOAFRRUUpreplay.onmouseout = function() {
+    cv_mo1H4YXBOAFRRUUpreplay.src = "http://ecx.images-amazon.com/images/I/71X03FlvgkS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1H4YXBOAFRRUUpreplay.parentNode;
+
+  var cv_mo1H4YXBOAFRRUUcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1H4YXBOAFRRUUcurrentClick) {
+      return cv_mo1H4YXBOAFRRUUcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:50 MinsI started with the summer infant best view lcd monitor, which did not work.  The screen froze every few minutes because of interference.  I live in San Francisco, so we can see like 10 other 2.4ghz routers from our house. video baby monitors are also on 2.4ghz (go figure FCC?!)so most, if not all baby video monitors either don't work, or cause interference with your WIFI.  So, I decided to try the Foscam.  It works great.  I have it hard wired (ethernet) rather than wireless, just to minimize the chances for interference.  We can view it on our computers or our iphones, which is great.  The remote control even works from the iphone, although the interface is not that great on the iphone.  We use it in conjuction with a Phillips AVENT SCD535 sound monitor, which also has no interference (baby sound monitors are on 1.9ghz, plus this one has 250 channels it can cycle through to find one with no interference)Together, this combination gives us ZERO interference with our baby monitor needs.  There is one downside, I have spend several hours trying to establish an IP address so I can view this on my iphone from anywhere, but can't seem to do it. I can only see the webcam if I'm home and on the network.  I'm not a network guy, but I'm pretty good with tech stuff.  Its unfortunate that it is so difficult to set this up for iphone viewing from anywere.

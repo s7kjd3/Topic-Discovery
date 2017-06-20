@@ -1,0 +1,1 @@
+The NTSC warning implies it only has a NTSC (analog) tuner.  The specs say it has both NTSC and ATSC (digital) tuners builtin. None of the reviews comment on how the builtin ATSC tuner performs... somebody w/one of these plz advise, thank you!

@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo24O623DAOL5VIembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo24O623DAOL5VIrefresh_preplay() {
+
+document.getElementById("cv_mo24O623DAOL5VIchiDiv").innerHTML = document.getElementById("cv_mo24O623DAOL5VIhiddenPre").innerHTML;
+};
+cv_mo24O623DAOL5VIrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo24O623DAOL5VIso;	   
+
+
+function cv_mo24O623DAOL5VIloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo24O623DAOL5VIso = new SWFObject(swfLocation, "cv_mo24O623DAOL5VIAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo24O623DAOL5VIso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo24O623DAOL5VIso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo24O623DAOL5VIso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo24O623DAOL5VIso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo24O623DAOL5VIso.setAttribute("height", swfHeight);
+          cv_mo24O623DAOL5VIso.setAttribute("width", swfWidth);
+          cv_mo24O623DAOL5VIso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo24O623DAOL5VIso.write("cv_mo24O623DAOL5VIflashcontent")) {
+          fp_resizePlayerSpace('cv_mo24O623DAOL5VI', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo24O623DAOL5VI';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo24O623DAOL5VI', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo24O623DAOL5VIloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo24O623DAOL5VI";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m22O7F7NHM93TQ";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m22O7F7NHM93TQ";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "ROWQBDMBXMFWT";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m22O7F7NHM93TQ/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo24O623DAOL5VIduration')) {
+      document.getElementById('cv_mo24O623DAOL5VIduration').style.display='none';
+    }
+    cv_mo24O623DAOL5VIloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo24O623DAOL5VIloadSwf(movieID, playerVersion) {
+   return _cv_mo24O623DAOL5VIloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo24O623DAOL5VInewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo24O623DAOL5VI', 0, h);
+}
+
+function cv_mo24O623DAOL5VIresetPlayer(w,h,bw,cc) {
+  cv_mo24O623DAOL5VInewHeight(h);
+
+  cv_mo24O623DAOL5VIso.addVariable("resetBandwidth", bw);
+  cv_mo24O623DAOL5VIso.addVariable("cacheCode", cc);
+  cv_mo24O623DAOL5VIso.setAttribute("height", h);
+  cv_mo24O623DAOL5VIso.setAttribute("width", w);
+  cv_mo24O623DAOL5VIso.write("cv_mo24O623DAOL5VIflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo24O623DAOL5VIRollOverImg = new Image();
+cv_mo24O623DAOL5VIRollOverImg.src = "http://ecx.images-amazon.com/images/I/81mAnrbrNoS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo24O623DAOL5VIpreplay = document.getElementById('cv_mo24O623DAOL5VIpreplayImageId');
+if (cv_mo24O623DAOL5VIpreplay) {
+  cv_mo24O623DAOL5VIpreplay.onmouseover = function() {
+    cv_mo24O623DAOL5VIpreplay.src = "http://ecx.images-amazon.com/images/I/81mAnrbrNoS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo24O623DAOL5VIpreplay.onmouseout = function() {
+    cv_mo24O623DAOL5VIpreplay.src = "http://ecx.images-amazon.com/images/I/81mAnrbrNoS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo24O623DAOL5VIpreplay.parentNode;
+
+  var cv_mo24O623DAOL5VIcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo24O623DAOL5VIcurrentClick) {
+      return cv_mo24O623DAOL5VIcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:50 MinsHey y'all,This phone does everything well.  There isn't a hiccup, a stutter, a hesitation nor a delay.  I have never enjoyed an Android (or any phone operating system for that matter) as much as i have this phone.The one thing that i did have to do in order to make this a 100% perfect experience is to start using my husbands Samsung Exhibit II as a secondary phone thats always at the ready to handle small, little tasks, this was i never worry i need both hands free to use LG Pro and have to worry about dropping it. In other words, i don't try to do othr things AND use the LG O Pro.  For that i use my hubbys Samsung Exhibit, which i rooted & threw Slimbean ROM on it), added a 3rd line to my T-Mobile acct for just 10.00 a month.So now, when i just need to make/receive a quick call or important text msg, i use the "lil guy"... For any Picture taking/ Recording a video, Internet surfing, leisure communicating or video watching, game playing, Kindle reading, Remote Controlling TV (sooo easy & works soooo well : ), or the 100 other things this huge screen and lightening speed processor was made for, i use my LG O Pro.TGG

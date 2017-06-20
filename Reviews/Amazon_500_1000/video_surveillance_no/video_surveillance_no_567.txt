@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1VINEA0HMH1JHembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1VINEA0HMH1JHrefresh_preplay() {
+
+document.getElementById("cv_mo1VINEA0HMH1JHchiDiv").innerHTML = document.getElementById("cv_mo1VINEA0HMH1JHhiddenPre").innerHTML;
+};
+cv_mo1VINEA0HMH1JHrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1VINEA0HMH1JHso;	   
+
+
+function cv_mo1VINEA0HMH1JHloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1VINEA0HMH1JHso = new SWFObject(swfLocation, "cv_mo1VINEA0HMH1JHAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1VINEA0HMH1JHso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1VINEA0HMH1JHso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1VINEA0HMH1JHso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1VINEA0HMH1JHso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1VINEA0HMH1JHso.setAttribute("height", swfHeight);
+          cv_mo1VINEA0HMH1JHso.setAttribute("width", swfWidth);
+          cv_mo1VINEA0HMH1JHso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1VINEA0HMH1JHso.write("cv_mo1VINEA0HMH1JHflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1VINEA0HMH1JH', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1VINEA0HMH1JH';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1VINEA0HMH1JH', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1VINEA0HMH1JHloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1VINEA0HMH1JH";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "mWP8DJV1W1PZA";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "mWP8DJV1W1PZA";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2VOUBRGBQ0WSA";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/mWP8DJV1W1PZA/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1VINEA0HMH1JHduration')) {
+      document.getElementById('cv_mo1VINEA0HMH1JHduration').style.display='none';
+    }
+    cv_mo1VINEA0HMH1JHloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1VINEA0HMH1JHloadSwf(movieID, playerVersion) {
+   return _cv_mo1VINEA0HMH1JHloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1VINEA0HMH1JHnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1VINEA0HMH1JH', 0, h);
+}
+
+function cv_mo1VINEA0HMH1JHresetPlayer(w,h,bw,cc) {
+  cv_mo1VINEA0HMH1JHnewHeight(h);
+
+  cv_mo1VINEA0HMH1JHso.addVariable("resetBandwidth", bw);
+  cv_mo1VINEA0HMH1JHso.addVariable("cacheCode", cc);
+  cv_mo1VINEA0HMH1JHso.setAttribute("height", h);
+  cv_mo1VINEA0HMH1JHso.setAttribute("width", w);
+  cv_mo1VINEA0HMH1JHso.write("cv_mo1VINEA0HMH1JHflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1VINEA0HMH1JHRollOverImg = new Image();
+cv_mo1VINEA0HMH1JHRollOverImg.src = "http://ecx.images-amazon.com/images/I/81pU0%2Bg5H-S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1VINEA0HMH1JHpreplay = document.getElementById('cv_mo1VINEA0HMH1JHpreplayImageId');
+if (cv_mo1VINEA0HMH1JHpreplay) {
+  cv_mo1VINEA0HMH1JHpreplay.onmouseover = function() {
+    cv_mo1VINEA0HMH1JHpreplay.src = "http://ecx.images-amazon.com/images/I/81pU0%2Bg5H-S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1VINEA0HMH1JHpreplay.onmouseout = function() {
+    cv_mo1VINEA0HMH1JHpreplay.src = "http://ecx.images-amazon.com/images/I/81pU0%2Bg5H-S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1VINEA0HMH1JHpreplay.parentNode;
+
+  var cv_mo1VINEA0HMH1JHcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1VINEA0HMH1JHcurrentClick) {
+      return cv_mo1VINEA0HMH1JHcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:14 MinsBumping up to a 1.3MP camera from the 0.3MP Apexis, EasyN, Foscam and Agasio that we usually get made quite a difference in image quality and night vision.Mounted it under an outdoor soffit, above the garage door, tucked in behind a downspout. Used a 1" hole saw to pass the connectors through and powered it with a D-Link POE: D-Link DWL-P200 Power Over Ethernet AdapterAmazingly, the image maintains brightness, color and clarity when it's almost dark. Switches to b/w infrared beyond that.Works well with Foscam Blue Iris Professional for your PC and the Android or iOS version of IP Cam Viewer Full enabling you to watch feeds from your tablet while you adjust the cameras.If you get the Android app from Amazon, it's available to all of your Android devices without having to pay each time, so we have it on the Kindle Fire, the Samsung Galaxy Tab and our HTC smartphones. With the $4 IP Camera Viewer, you can watch your feeds from anywhere there's internet.This video was captured by Dahua's Pro Surveillance System, which usually comes with the included CD. If not, it's also a free download from the MarsCCTV site.So far, Blue Iris Pro seems to have an easier time sensing motion and recording feeds in a more useful format.Update: We now have 16 of these Dahuas powered by four TP-LINK TL-SF1008P at three homes and a shop, all monitored by Blue Iris Pro. Four of these are also recorded by a 16-channel Dahua NVR: Dahua 16 Channel Vertical NVR It's like a tiny computer with two removable hard drive bays on the front. Add one or two 3TB hard drives, like WD Red 3TB - WD30EFRX and you'll have more than enough to watch your house while you're on vacation.

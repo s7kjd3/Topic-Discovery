@@ -1,0 +1,1 @@
+This unit is works great.  As with all sensors of this type, it will detect moving branches and at times temperature changes caused by sun shine.  This can be minimized by placing tape over the sensor to lesson what the sensor detects.

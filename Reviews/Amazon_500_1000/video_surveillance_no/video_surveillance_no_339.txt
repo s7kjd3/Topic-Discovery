@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moWJMB70IB1HCNembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moWJMB70IB1HCNrefresh_preplay() {
+
+document.getElementById("cv_moWJMB70IB1HCNchiDiv").innerHTML = document.getElementById("cv_moWJMB70IB1HCNhiddenPre").innerHTML;
+};
+cv_moWJMB70IB1HCNrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moWJMB70IB1HCNso;	   
+
+
+function cv_moWJMB70IB1HCNloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moWJMB70IB1HCNso = new SWFObject(swfLocation, "cv_moWJMB70IB1HCNAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moWJMB70IB1HCNso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moWJMB70IB1HCNso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moWJMB70IB1HCNso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moWJMB70IB1HCNso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moWJMB70IB1HCNso.setAttribute("height", swfHeight);
+          cv_moWJMB70IB1HCNso.setAttribute("width", swfWidth);
+          cv_moWJMB70IB1HCNso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moWJMB70IB1HCNso.write("cv_moWJMB70IB1HCNflashcontent")) {
+          fp_resizePlayerSpace('cv_moWJMB70IB1HCN', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moWJMB70IB1HCN';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moWJMB70IB1HCN', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moWJMB70IB1HCNloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moWJMB70IB1HCN";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1CO1YDUT6XBYT";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1CO1YDUT6XBYT";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RH3K7QVO67H3Z";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1CO1YDUT6XBYT/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moWJMB70IB1HCNduration')) {
+      document.getElementById('cv_moWJMB70IB1HCNduration').style.display='none';
+    }
+    cv_moWJMB70IB1HCNloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moWJMB70IB1HCNloadSwf(movieID, playerVersion) {
+   return _cv_moWJMB70IB1HCNloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moWJMB70IB1HCNnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moWJMB70IB1HCN', 0, h);
+}
+
+function cv_moWJMB70IB1HCNresetPlayer(w,h,bw,cc) {
+  cv_moWJMB70IB1HCNnewHeight(h);
+
+  cv_moWJMB70IB1HCNso.addVariable("resetBandwidth", bw);
+  cv_moWJMB70IB1HCNso.addVariable("cacheCode", cc);
+  cv_moWJMB70IB1HCNso.setAttribute("height", h);
+  cv_moWJMB70IB1HCNso.setAttribute("width", w);
+  cv_moWJMB70IB1HCNso.write("cv_moWJMB70IB1HCNflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moWJMB70IB1HCNRollOverImg = new Image();
+cv_moWJMB70IB1HCNRollOverImg.src = "http://ecx.images-amazon.com/images/I/81-LPJemKuS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moWJMB70IB1HCNpreplay = document.getElementById('cv_moWJMB70IB1HCNpreplayImageId');
+if (cv_moWJMB70IB1HCNpreplay) {
+  cv_moWJMB70IB1HCNpreplay.onmouseover = function() {
+    cv_moWJMB70IB1HCNpreplay.src = "http://ecx.images-amazon.com/images/I/81-LPJemKuS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moWJMB70IB1HCNpreplay.onmouseout = function() {
+    cv_moWJMB70IB1HCNpreplay.src = "http://ecx.images-amazon.com/images/I/81-LPJemKuS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moWJMB70IB1HCNpreplay.parentNode;
+
+  var cv_moWJMB70IB1HCNcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moWJMB70IB1HCNcurrentClick) {
+      return cv_moWJMB70IB1HCNcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:08 MinsThe video shown is a short clip -- a direct output from the Defender Stealth1 in 640x480, 12fps, and the default medium quality mode.  The files were formatted in .asf format, which I had to convert to .mov format to upload to Amazon.The Defender STEALTH1 Covert pinhole surveillance camera masquerades itself as a motion sensor.  This unit has its appeal for those looking to monitor certain areas covertly.  However, its poor performance in low light conditions limits this unit to use during the day time or areas where it is well lighted.After putting it through its paces, I came away pleased with the simplicity of setup, but could see where there is room for improvement.Pros:- Decent video output in lighted conditions.- Recording resolution and quality can be adjusted to your liking.  You can choose a resolution of 320x240 with 30 frames per second, or 640x480 with 12 frames per second.  Additionally, you can select either low, medium or high quality.  Adjusting these values will impact the length of video you can record so.- Ability to set it to record on motion (ability to adjust the detection sensitivity!), manually record (clicking the record button on the unit), or schedule recording (you can schedule it to use motion detection to record, or continuous)- Can either plug entire unit directly into TV using the provided RCA-to-RCA video cable to view content OR remove the SD card to play on your computer.- Ability to either flush mount it to the wall, or use the provided bracket.- Option to go completely wireless (not to be confused with wifi) by using (4) AA batteries instead of the provided corded power adapter.- No need for a separate DVR.Cons:- Poor in low light conditions -- could not see a thing!- Power cable is only 5' long.  In applications where you want to semi-permanently mount the unit, and provide it with a constant power source, the cable would be unsightly, and a dead giveaway.  However, this is minor as you have the option of using batteries.- No ability to view live streams from afar -- might be nice if this could be viewed over wifi.  No real fault of the product as it does what it says it does, but it would be an excellent feature to add.- No indicator lights to show SD card full or battery left.- Would be nice to be able to program the unit by plugging it into the computer instead of a TV.- Relatively large compared to actual motion detectors.

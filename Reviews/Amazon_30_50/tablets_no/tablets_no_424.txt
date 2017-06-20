@@ -1,0 +1,1 @@
+The power adapter provided for charging has to be physically manipulated in the port for the iPad to recognize it as a supported adapter.  Else, a message pops up saying the "adapter is not supported by this device" and the iPad will not charge.

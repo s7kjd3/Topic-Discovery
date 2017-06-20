@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1J962DVDHWJGEembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1J962DVDHWJGErefresh_preplay() {
+
+document.getElementById("cv_mo1J962DVDHWJGEchiDiv").innerHTML = document.getElementById("cv_mo1J962DVDHWJGEhiddenPre").innerHTML;
+};
+cv_mo1J962DVDHWJGErefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1J962DVDHWJGEso;	   
+
+
+function cv_mo1J962DVDHWJGEloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1J962DVDHWJGEso = new SWFObject(swfLocation, "cv_mo1J962DVDHWJGEAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1J962DVDHWJGEso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1J962DVDHWJGEso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1J962DVDHWJGEso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1J962DVDHWJGEso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1J962DVDHWJGEso.setAttribute("height", swfHeight);
+          cv_mo1J962DVDHWJGEso.setAttribute("width", swfWidth);
+          cv_mo1J962DVDHWJGEso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1J962DVDHWJGEso.write("cv_mo1J962DVDHWJGEflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1J962DVDHWJGE', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1J962DVDHWJGE';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1J962DVDHWJGE', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1J962DVDHWJGEloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1J962DVDHWJGE";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m997NUC7DFI42";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m997NUC7DFI42";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R18FS8FM75C1PL";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m997NUC7DFI42/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1J962DVDHWJGEduration')) {
+      document.getElementById('cv_mo1J962DVDHWJGEduration').style.display='none';
+    }
+    cv_mo1J962DVDHWJGEloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1J962DVDHWJGEloadSwf(movieID, playerVersion) {
+   return _cv_mo1J962DVDHWJGEloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1J962DVDHWJGEnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1J962DVDHWJGE', 0, h);
+}
+
+function cv_mo1J962DVDHWJGEresetPlayer(w,h,bw,cc) {
+  cv_mo1J962DVDHWJGEnewHeight(h);
+
+  cv_mo1J962DVDHWJGEso.addVariable("resetBandwidth", bw);
+  cv_mo1J962DVDHWJGEso.addVariable("cacheCode", cc);
+  cv_mo1J962DVDHWJGEso.setAttribute("height", h);
+  cv_mo1J962DVDHWJGEso.setAttribute("width", w);
+  cv_mo1J962DVDHWJGEso.write("cv_mo1J962DVDHWJGEflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1J962DVDHWJGERollOverImg = new Image();
+cv_mo1J962DVDHWJGERollOverImg.src = "http://ecx.images-amazon.com/images/I/91PNknvUS9S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1J962DVDHWJGEpreplay = document.getElementById('cv_mo1J962DVDHWJGEpreplayImageId');
+if (cv_mo1J962DVDHWJGEpreplay) {
+  cv_mo1J962DVDHWJGEpreplay.onmouseover = function() {
+    cv_mo1J962DVDHWJGEpreplay.src = "http://ecx.images-amazon.com/images/I/91PNknvUS9S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1J962DVDHWJGEpreplay.onmouseout = function() {
+    cv_mo1J962DVDHWJGEpreplay.src = "http://ecx.images-amazon.com/images/I/91PNknvUS9S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1J962DVDHWJGEpreplay.parentNode;
+
+  var cv_mo1J962DVDHWJGEcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1J962DVDHWJGEcurrentClick) {
+      return cv_mo1J962DVDHWJGEcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 4:07 MinsThe product is really awesome.The only thing you need to be careful is the extension arm.If you have an oversized camera or a camcorder, you'll definetelyneed an extension arm which originally doesn't come with the product.Please see my user photos after January 8th, 2010.The user photos showing the extension arm are a little confusing.I bought a geniune one directly from the Amazon, and it doesn't havethe extesion arm which I later got directly from PanaVise. The guysover there are terrific, and extremely helpful. They said the modelwith the extension arm should be called as 809-X.The video was recorded with Xacti 1010I passed over two railroad crossings (at 1:44 and 3:33), the roadwas terrible. The vibration and shaking is acceptable.

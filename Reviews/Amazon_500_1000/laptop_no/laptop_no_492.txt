@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo19ZARQG7EWZ4NembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo19ZARQG7EWZ4Nrefresh_preplay() {
+
+document.getElementById("cv_mo19ZARQG7EWZ4NchiDiv").innerHTML = document.getElementById("cv_mo19ZARQG7EWZ4NhiddenPre").innerHTML;
+};
+cv_mo19ZARQG7EWZ4Nrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo19ZARQG7EWZ4Nso;	   
+
+
+function cv_mo19ZARQG7EWZ4NloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo19ZARQG7EWZ4Nso = new SWFObject(swfLocation, "cv_mo19ZARQG7EWZ4NAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo19ZARQG7EWZ4Nso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo19ZARQG7EWZ4Nso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo19ZARQG7EWZ4Nso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo19ZARQG7EWZ4Nso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo19ZARQG7EWZ4Nso.setAttribute("height", swfHeight);
+          cv_mo19ZARQG7EWZ4Nso.setAttribute("width", swfWidth);
+          cv_mo19ZARQG7EWZ4Nso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo19ZARQG7EWZ4Nso.write("cv_mo19ZARQG7EWZ4Nflashcontent")) {
+          fp_resizePlayerSpace('cv_mo19ZARQG7EWZ4N', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo19ZARQG7EWZ4N';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo19ZARQG7EWZ4N', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo19ZARQG7EWZ4NloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo19ZARQG7EWZ4N";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "177-8699218-0092836";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m23KJD3OO5FF85";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m23KJD3OO5FF85";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R16HWH0IJDJWJ2";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m23KJD3OO5FF85/177-8699218-0092836";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/177-8699218-0092836";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo19ZARQG7EWZ4Nduration')) {
+      document.getElementById('cv_mo19ZARQG7EWZ4Nduration').style.display='none';
+    }
+    cv_mo19ZARQG7EWZ4NloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo19ZARQG7EWZ4NloadSwf(movieID, playerVersion) {
+   return _cv_mo19ZARQG7EWZ4NloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo19ZARQG7EWZ4NnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo19ZARQG7EWZ4N', 0, h);
+}
+
+function cv_mo19ZARQG7EWZ4NresetPlayer(w,h,bw,cc) {
+  cv_mo19ZARQG7EWZ4NnewHeight(h);
+
+  cv_mo19ZARQG7EWZ4Nso.addVariable("resetBandwidth", bw);
+  cv_mo19ZARQG7EWZ4Nso.addVariable("cacheCode", cc);
+  cv_mo19ZARQG7EWZ4Nso.setAttribute("height", h);
+  cv_mo19ZARQG7EWZ4Nso.setAttribute("width", w);
+  cv_mo19ZARQG7EWZ4Nso.write("cv_mo19ZARQG7EWZ4Nflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo19ZARQG7EWZ4NRollOverImg = new Image();
+cv_mo19ZARQG7EWZ4NRollOverImg.src = "http://ecx.images-amazon.com/images/I/81zxl0f670S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo19ZARQG7EWZ4Npreplay = document.getElementById('cv_mo19ZARQG7EWZ4NpreplayImageId');
+if (cv_mo19ZARQG7EWZ4Npreplay) {
+  cv_mo19ZARQG7EWZ4Npreplay.onmouseover = function() {
+    cv_mo19ZARQG7EWZ4Npreplay.src = "http://ecx.images-amazon.com/images/I/81zxl0f670S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo19ZARQG7EWZ4Npreplay.onmouseout = function() {
+    cv_mo19ZARQG7EWZ4Npreplay.src = "http://ecx.images-amazon.com/images/I/81zxl0f670S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo19ZARQG7EWZ4Npreplay.parentNode;
+
+  var cv_mo19ZARQG7EWZ4NcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html/ref=cm_ciu_vr_mo19ZARQG7EWZ4N/177-8699218-0092836?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo19ZARQG7EWZ4NcurrentClick) {
+      return cv_mo19ZARQG7EWZ4NcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:48 MinsMultiple problems, had it less than 6 month, had to send it back for 2 weeks, told them not to delete my data and they did anyway, and then returned a broken laptop, which you can hear in the video at [...]The video is the sound AFTER it was return.  Horrible product, horrible customer service, worst company I have ever dealt with.

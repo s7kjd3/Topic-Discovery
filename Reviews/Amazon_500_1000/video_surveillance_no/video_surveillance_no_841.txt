@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moNO4PARUUDVGVembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moNO4PARUUDVGVrefresh_preplay() {
+
+document.getElementById("cv_moNO4PARUUDVGVchiDiv").innerHTML = document.getElementById("cv_moNO4PARUUDVGVhiddenPre").innerHTML;
+};
+cv_moNO4PARUUDVGVrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moNO4PARUUDVGVso;	   
+
+
+function cv_moNO4PARUUDVGVloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moNO4PARUUDVGVso = new SWFObject(swfLocation, "cv_moNO4PARUUDVGVAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moNO4PARUUDVGVso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moNO4PARUUDVGVso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moNO4PARUUDVGVso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moNO4PARUUDVGVso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moNO4PARUUDVGVso.setAttribute("height", swfHeight);
+          cv_moNO4PARUUDVGVso.setAttribute("width", swfWidth);
+          cv_moNO4PARUUDVGVso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moNO4PARUUDVGVso.write("cv_moNO4PARUUDVGVflashcontent")) {
+          fp_resizePlayerSpace('cv_moNO4PARUUDVGV', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moNO4PARUUDVGV';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moNO4PARUUDVGV', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moNO4PARUUDVGVloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moNO4PARUUDVGV";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m2QKWOKHSNWOG6";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m2QKWOKHSNWOG6";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2AQLO9C9B6DU1";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m2QKWOKHSNWOG6/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moNO4PARUUDVGVduration')) {
+      document.getElementById('cv_moNO4PARUUDVGVduration').style.display='none';
+    }
+    cv_moNO4PARUUDVGVloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moNO4PARUUDVGVloadSwf(movieID, playerVersion) {
+   return _cv_moNO4PARUUDVGVloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moNO4PARUUDVGVnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moNO4PARUUDVGV', 0, h);
+}
+
+function cv_moNO4PARUUDVGVresetPlayer(w,h,bw,cc) {
+  cv_moNO4PARUUDVGVnewHeight(h);
+
+  cv_moNO4PARUUDVGVso.addVariable("resetBandwidth", bw);
+  cv_moNO4PARUUDVGVso.addVariable("cacheCode", cc);
+  cv_moNO4PARUUDVGVso.setAttribute("height", h);
+  cv_moNO4PARUUDVGVso.setAttribute("width", w);
+  cv_moNO4PARUUDVGVso.write("cv_moNO4PARUUDVGVflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moNO4PARUUDVGVRollOverImg = new Image();
+cv_moNO4PARUUDVGVRollOverImg.src = "http://ecx.images-amazon.com/images/I/81lrU3wPluS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moNO4PARUUDVGVpreplay = document.getElementById('cv_moNO4PARUUDVGVpreplayImageId');
+if (cv_moNO4PARUUDVGVpreplay) {
+  cv_moNO4PARUUDVGVpreplay.onmouseover = function() {
+    cv_moNO4PARUUDVGVpreplay.src = "http://ecx.images-amazon.com/images/I/81lrU3wPluS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moNO4PARUUDVGVpreplay.onmouseout = function() {
+    cv_moNO4PARUUDVGVpreplay.src = "http://ecx.images-amazon.com/images/I/81lrU3wPluS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moNO4PARUUDVGVpreplay.parentNode;
+
+  var cv_moNO4PARUUDVGVcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moNO4PARUUDVGVcurrentClick) {
+      return cv_moNO4PARUUDVGVcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 3:10 MinsThis is a nice 7 inch LCD screen for use in your vehicle as a monitor for a backup camera.  It can also be used to show video from other sources in your car but it does not have sound output.  The remote control allows you to switch between two video sources.  This is a nice looking screen and it offers to you multiple methods of mounting it and the mounting hardware is supplied.You may want to consider having this monitor professionally installed as there is some wiring to be done and any time you are wiring items into your car you must be careful.  This is even a recommendation from the supplier so please consider it if you are not skilled at doing such work yourself.I had mine wired to a Taotronics TT-CC17 backup license plate camera which also came with the appropriate wiring harness. I put together a video of the unit and its accessories for your information.What's in the box?* The screen itself* A plastic mounting snap in frame for the monitor* A wiring harness with a fused power line and two video plugs ready to connect to a backup camera and another possible video input source. The harness is 6 feet long.* An instruction manual* A remote control* A metal mounting stand for mounting the screen to make it adjustable in the angle of the monitor viewing for the driver.* A double-sided adhesive mounting pad to mount the stand if you do not want to drill any holes.This is a nicely packaged monitor and it comes with all of the accessories you need for a professional installation.  I am using it for a backup camera like I said but it can also be used to show videos in your vehicle.  I rated it as a 5 star item.I was supplied a sample for test and evaluation and I promised to provide a fair and honest review.

@@ -1,0 +1,1 @@
+When I received my pro13, I found that a usb port is bad! Four metal strips, one of which is broken. When I insert any device to the usb port, the system show "USB device not recognized"!

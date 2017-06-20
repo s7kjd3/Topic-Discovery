@@ -1,0 +1,1 @@
+New unit with new batteries, and a clear unobstructed distance for signal between sensor and receiver is 135 feet, not 400..Signal will not pass over 75 feet through walls.Sensor does not detect a large vehicle passing 20 feet away. It does work but very minamally usefullness.

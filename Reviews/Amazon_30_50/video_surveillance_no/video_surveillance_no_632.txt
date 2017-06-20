@@ -1,0 +1,1 @@
+The locking mechanism doesn't work properly so the camera cannot be positioned and locked down. It looks like a basic design flaw. Don't waste your time trying to fix it or make it work.

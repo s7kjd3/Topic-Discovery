@@ -1,0 +1,1 @@
+The camera does everything reasonably well. I need the motion detection+email alert feature. It works as advertised but all the settings are gone after you unplug and plug back the device. This is a serious flaw.

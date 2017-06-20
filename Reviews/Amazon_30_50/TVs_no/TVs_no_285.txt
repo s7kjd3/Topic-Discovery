@@ -1,0 +1,1 @@
+When they replaced the power circuit board, make sure the backlight is working properly because some new board will disable the backlight and it's no longer adjustable (same on Energy Saving mode) and your HDTV will lose 25-50% contrast ratio.Power Supply - part no. BN44-00192A

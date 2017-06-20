@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moH6GQBDC2PI03embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moH6GQBDC2PI03refresh_preplay() {
+
+document.getElementById("cv_moH6GQBDC2PI03chiDiv").innerHTML = document.getElementById("cv_moH6GQBDC2PI03hiddenPre").innerHTML;
+};
+cv_moH6GQBDC2PI03refresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moH6GQBDC2PI03so;	   
+
+
+function cv_moH6GQBDC2PI03loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moH6GQBDC2PI03so = new SWFObject(swfLocation, "cv_moH6GQBDC2PI03AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moH6GQBDC2PI03so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moH6GQBDC2PI03so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moH6GQBDC2PI03so.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moH6GQBDC2PI03so.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moH6GQBDC2PI03so.setAttribute("height", swfHeight);
+          cv_moH6GQBDC2PI03so.setAttribute("width", swfWidth);
+          cv_moH6GQBDC2PI03so.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moH6GQBDC2PI03so.write("cv_moH6GQBDC2PI03flashcontent")) {
+          fp_resizePlayerSpace('cv_moH6GQBDC2PI03', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moH6GQBDC2PI03';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moH6GQBDC2PI03', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moH6GQBDC2PI03loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moH6GQBDC2PI03";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m2JYDQ6NTDO6TH";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m2JYDQ6NTDO6TH";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R1MC59EHP9XG3C";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m2JYDQ6NTDO6TH/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moH6GQBDC2PI03duration')) {
+      document.getElementById('cv_moH6GQBDC2PI03duration').style.display='none';
+    }
+    cv_moH6GQBDC2PI03loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moH6GQBDC2PI03loadSwf(movieID, playerVersion) {
+   return _cv_moH6GQBDC2PI03loadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moH6GQBDC2PI03newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moH6GQBDC2PI03', 0, h);
+}
+
+function cv_moH6GQBDC2PI03resetPlayer(w,h,bw,cc) {
+  cv_moH6GQBDC2PI03newHeight(h);
+
+  cv_moH6GQBDC2PI03so.addVariable("resetBandwidth", bw);
+  cv_moH6GQBDC2PI03so.addVariable("cacheCode", cc);
+  cv_moH6GQBDC2PI03so.setAttribute("height", h);
+  cv_moH6GQBDC2PI03so.setAttribute("width", w);
+  cv_moH6GQBDC2PI03so.write("cv_moH6GQBDC2PI03flashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moH6GQBDC2PI03RollOverImg = new Image();
+cv_moH6GQBDC2PI03RollOverImg.src = "http://ecx.images-amazon.com/images/I/81g-%2B1rIikS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moH6GQBDC2PI03preplay = document.getElementById('cv_moH6GQBDC2PI03preplayImageId');
+if (cv_moH6GQBDC2PI03preplay) {
+  cv_moH6GQBDC2PI03preplay.onmouseover = function() {
+    cv_moH6GQBDC2PI03preplay.src = "http://ecx.images-amazon.com/images/I/81g-%2B1rIikS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moH6GQBDC2PI03preplay.onmouseout = function() {
+    cv_moH6GQBDC2PI03preplay.src = "http://ecx.images-amazon.com/images/I/81g-%2B1rIikS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moH6GQBDC2PI03preplay.parentNode;
+
+  var cv_moH6GQBDC2PI03currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moH6GQBDC2PI03currentClick) {
+      return cv_moH6GQBDC2PI03currentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:30 MinsThis keyboard works perfectly and seems to be well made.  I wasn't sure if it would work with Mac products, but fortunately it works fine on my MacBook Pro laptop.  I purchased it as a secondary keyboard to the one on my laptop, the number pad on this keyboard is good for accounting and spreadsheets - it's much better than the long "row" of numbers on the Macbook Pro's setup.The first time you plug this keyboard into your computer's USB port, there is a quick keyboard configuration that requires you to press a few of the keys to ensure it is properly calibrated.  After that, the keyboard is ready to go.  The keys are nice and have just the right amount of resistance.  The USB cord is long enough to accommodate just about any scenario.*NOTE: At the time of this review, the product photos show both a keyboard and a mouse.  But this purchase includes only a keyboard, there is no mouse.

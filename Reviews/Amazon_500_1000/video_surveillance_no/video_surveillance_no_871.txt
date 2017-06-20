@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo13WSA031TS7KPembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo13WSA031TS7KPrefresh_preplay() {
+
+document.getElementById("cv_mo13WSA031TS7KPchiDiv").innerHTML = document.getElementById("cv_mo13WSA031TS7KPhiddenPre").innerHTML;
+};
+cv_mo13WSA031TS7KPrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo13WSA031TS7KPso;	   
+
+
+function cv_mo13WSA031TS7KPloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo13WSA031TS7KPso = new SWFObject(swfLocation, "cv_mo13WSA031TS7KPAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo13WSA031TS7KPso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo13WSA031TS7KPso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo13WSA031TS7KPso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo13WSA031TS7KPso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo13WSA031TS7KPso.setAttribute("height", swfHeight);
+          cv_mo13WSA031TS7KPso.setAttribute("width", swfWidth);
+          cv_mo13WSA031TS7KPso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo13WSA031TS7KPso.write("cv_mo13WSA031TS7KPflashcontent")) {
+          fp_resizePlayerSpace('cv_mo13WSA031TS7KP', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo13WSA031TS7KP';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo13WSA031TS7KP', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo13WSA031TS7KPloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo13WSA031TS7KP";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m2ZU3GD2QVZ4UH";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m2ZU3GD2QVZ4UH";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R37K9HTKALCHAI";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m2ZU3GD2QVZ4UH/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo13WSA031TS7KPduration')) {
+      document.getElementById('cv_mo13WSA031TS7KPduration').style.display='none';
+    }
+    cv_mo13WSA031TS7KPloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo13WSA031TS7KPloadSwf(movieID, playerVersion) {
+   return _cv_mo13WSA031TS7KPloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo13WSA031TS7KPnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo13WSA031TS7KP', 0, h);
+}
+
+function cv_mo13WSA031TS7KPresetPlayer(w,h,bw,cc) {
+  cv_mo13WSA031TS7KPnewHeight(h);
+
+  cv_mo13WSA031TS7KPso.addVariable("resetBandwidth", bw);
+  cv_mo13WSA031TS7KPso.addVariable("cacheCode", cc);
+  cv_mo13WSA031TS7KPso.setAttribute("height", h);
+  cv_mo13WSA031TS7KPso.setAttribute("width", w);
+  cv_mo13WSA031TS7KPso.write("cv_mo13WSA031TS7KPflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo13WSA031TS7KPRollOverImg = new Image();
+cv_mo13WSA031TS7KPRollOverImg.src = "http://ecx.images-amazon.com/images/I/71s7hzdAU1S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo13WSA031TS7KPpreplay = document.getElementById('cv_mo13WSA031TS7KPpreplayImageId');
+if (cv_mo13WSA031TS7KPpreplay) {
+  cv_mo13WSA031TS7KPpreplay.onmouseover = function() {
+    cv_mo13WSA031TS7KPpreplay.src = "http://ecx.images-amazon.com/images/I/71s7hzdAU1S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo13WSA031TS7KPpreplay.onmouseout = function() {
+    cv_mo13WSA031TS7KPpreplay.src = "http://ecx.images-amazon.com/images/I/71s7hzdAU1S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo13WSA031TS7KPpreplay.parentNode;
+
+  var cv_mo13WSA031TS7KPcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo13WSA031TS7KPcurrentClick) {
+      return cv_mo13WSA031TS7KPcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 3:48 MinsFirst things first... I mention this in the video portion of the review, but ALL infrared night vision baby camera have poor resolution in the dark. They just do... I have tried four separate cameras and none of them offer a clear picture in the dark. They are all fuzzy and it is difficult to distinguish any level of detail. Another observation.... it seems like the bigger the display the WORSE the picture becomes when using night vision. I guess the resolution of the cameras are all about the same, but when you blow it up to a bigger screen, you lose additional detail. Soooo.... the Samsung SEW-3036NW baby monitor really does not have great picture when you are using it in the dark. The good news? It really doesn't matter too much.Why doesn't it matter? When we are using the camera at night we are trying to see a few basics, is our daughter still in bed, is she sitting up, and other big types of things. What are not trying to do is distinguish if she is smiling or has something in her hand. The Samsun SEW-3036WN works well enough for the big things, but like all baby monitors, it will struggle to pull out the details (although they all will distinguish between *open* and *closed* eyes.Notes--The Samsung SEW-3036WN will allow you to talk to you child through the camera. This is more important that it may seem - it is always nice to be able to ask "What is the matter"- The range on the camera seems more than accurate - 800' seems a little over-generous, but it certainly has enough range for our home.- The daytime camera resolution is very good- The camera has the ability to zoom and pan - although zooming in at night lessens the already poor resolution- The camera can be mounted to the wall, but it does not come with a mounting clip (like the Levanas)- Can support up to 4 camera from one monitor/display- Has a built in clock- Has the ability to be used with voice activated controls - but we have found that just leaving the camera on seems to work better for us.- Very large 3.5" screen - although it does cost use some picture clarity/resolution- The display is fully rechargeable - The battery life seems to be in the 6-8 hour rangeFinal Verdict - The Samsung SEW-3036NW is a very nice baby monitor, but like all infrared baby monitors, it does have its limitations in low light situations.4 1/2 Stars

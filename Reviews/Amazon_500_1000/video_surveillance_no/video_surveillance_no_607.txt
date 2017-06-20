@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo3H3B5RY6224FBembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo3H3B5RY6224FBrefresh_preplay() {
+
+document.getElementById("cv_mo3H3B5RY6224FBchiDiv").innerHTML = document.getElementById("cv_mo3H3B5RY6224FBhiddenPre").innerHTML;
+};
+cv_mo3H3B5RY6224FBrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo3H3B5RY6224FBso;	   
+
+
+function cv_mo3H3B5RY6224FBloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo3H3B5RY6224FBso = new SWFObject(swfLocation, "cv_mo3H3B5RY6224FBAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo3H3B5RY6224FBso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo3H3B5RY6224FBso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo3H3B5RY6224FBso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo3H3B5RY6224FBso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo3H3B5RY6224FBso.setAttribute("height", swfHeight);
+          cv_mo3H3B5RY6224FBso.setAttribute("width", swfWidth);
+          cv_mo3H3B5RY6224FBso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo3H3B5RY6224FBso.write("cv_mo3H3B5RY6224FBflashcontent")) {
+          fp_resizePlayerSpace('cv_mo3H3B5RY6224FB', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo3H3B5RY6224FB';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo3H3B5RY6224FB', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo3H3B5RY6224FBloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo3H3B5RY6224FB";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m2IABC3MGZEHBX";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m2IABC3MGZEHBX";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2GJW6CDW7K89O";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m2IABC3MGZEHBX/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo3H3B5RY6224FBduration')) {
+      document.getElementById('cv_mo3H3B5RY6224FBduration').style.display='none';
+    }
+    cv_mo3H3B5RY6224FBloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo3H3B5RY6224FBloadSwf(movieID, playerVersion) {
+   return _cv_mo3H3B5RY6224FBloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo3H3B5RY6224FBnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo3H3B5RY6224FB', 0, h);
+}
+
+function cv_mo3H3B5RY6224FBresetPlayer(w,h,bw,cc) {
+  cv_mo3H3B5RY6224FBnewHeight(h);
+
+  cv_mo3H3B5RY6224FBso.addVariable("resetBandwidth", bw);
+  cv_mo3H3B5RY6224FBso.addVariable("cacheCode", cc);
+  cv_mo3H3B5RY6224FBso.setAttribute("height", h);
+  cv_mo3H3B5RY6224FBso.setAttribute("width", w);
+  cv_mo3H3B5RY6224FBso.write("cv_mo3H3B5RY6224FBflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo3H3B5RY6224FBRollOverImg = new Image();
+cv_mo3H3B5RY6224FBRollOverImg.src = "http://ecx.images-amazon.com/images/I/918-MWxTtKS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo3H3B5RY6224FBpreplay = document.getElementById('cv_mo3H3B5RY6224FBpreplayImageId');
+if (cv_mo3H3B5RY6224FBpreplay) {
+  cv_mo3H3B5RY6224FBpreplay.onmouseover = function() {
+    cv_mo3H3B5RY6224FBpreplay.src = "http://ecx.images-amazon.com/images/I/918-MWxTtKS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo3H3B5RY6224FBpreplay.onmouseout = function() {
+    cv_mo3H3B5RY6224FBpreplay.src = "http://ecx.images-amazon.com/images/I/918-MWxTtKS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo3H3B5RY6224FBpreplay.parentNode;
+
+  var cv_mo3H3B5RY6224FBcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo3H3B5RY6224FBcurrentClick) {
+      return cv_mo3H3B5RY6224FBcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:10 MinsI got this for a Foscam F18910W. The package came really fast.  I chose to hang it on the corner of my house I built a corner bracket to mount it. Looking at the construction I saw what other reviewers were talking about so I didn't take any chances even though it is under an eave. I put a little silicon around the top seam and drilled a weep hole in the globe to let out any water that may get in side. As far as mounting the camera inside there was no mounting hardware that came with the housing just a metal plate that mounts in the housing. if the camera is mounted flat on the plate you will not see much. the way I fixed that was to use a 1/4-20 x 4 toggle bolt with a nut on the other side to put the camera as close to the globe as possible, this worked out quite well. now as far as the infrared  illumination the camera has  with the globe on is useless. but that is not the fault of the housing maker. All I can do is turn off the infrared unfortunately that makes the foscam cameras useless at night.

@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo312147PWQW2K7embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo312147PWQW2K7refresh_preplay() {
+
+document.getElementById("cv_mo312147PWQW2K7chiDiv").innerHTML = document.getElementById("cv_mo312147PWQW2K7hiddenPre").innerHTML;
+};
+cv_mo312147PWQW2K7refresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo312147PWQW2K7so;	   
+
+
+function cv_mo312147PWQW2K7loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo312147PWQW2K7so = new SWFObject(swfLocation, "cv_mo312147PWQW2K7AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo312147PWQW2K7so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo312147PWQW2K7so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo312147PWQW2K7so.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo312147PWQW2K7so.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo312147PWQW2K7so.setAttribute("height", swfHeight);
+          cv_mo312147PWQW2K7so.setAttribute("width", swfWidth);
+          cv_mo312147PWQW2K7so.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo312147PWQW2K7so.write("cv_mo312147PWQW2K7flashcontent")) {
+          fp_resizePlayerSpace('cv_mo312147PWQW2K7', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo312147PWQW2K7';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo312147PWQW2K7', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo312147PWQW2K7loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo312147PWQW2K7";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3P1Z156D145PT";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3P1Z156D145PT";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R1PVERL4Z3IEH3";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3P1Z156D145PT/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo312147PWQW2K7duration')) {
+      document.getElementById('cv_mo312147PWQW2K7duration').style.display='none';
+    }
+    cv_mo312147PWQW2K7loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo312147PWQW2K7loadSwf(movieID, playerVersion) {
+   return _cv_mo312147PWQW2K7loadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo312147PWQW2K7newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo312147PWQW2K7', 0, h);
+}
+
+function cv_mo312147PWQW2K7resetPlayer(w,h,bw,cc) {
+  cv_mo312147PWQW2K7newHeight(h);
+
+  cv_mo312147PWQW2K7so.addVariable("resetBandwidth", bw);
+  cv_mo312147PWQW2K7so.addVariable("cacheCode", cc);
+  cv_mo312147PWQW2K7so.setAttribute("height", h);
+  cv_mo312147PWQW2K7so.setAttribute("width", w);
+  cv_mo312147PWQW2K7so.write("cv_mo312147PWQW2K7flashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo312147PWQW2K7RollOverImg = new Image();
+cv_mo312147PWQW2K7RollOverImg.src = "http://ecx.images-amazon.com/images/I/81Ly8TVov4S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo312147PWQW2K7preplay = document.getElementById('cv_mo312147PWQW2K7preplayImageId');
+if (cv_mo312147PWQW2K7preplay) {
+  cv_mo312147PWQW2K7preplay.onmouseover = function() {
+    cv_mo312147PWQW2K7preplay.src = "http://ecx.images-amazon.com/images/I/81Ly8TVov4S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo312147PWQW2K7preplay.onmouseout = function() {
+    cv_mo312147PWQW2K7preplay.src = "http://ecx.images-amazon.com/images/I/81Ly8TVov4S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo312147PWQW2K7preplay.parentNode;
+
+  var cv_mo312147PWQW2K7currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo312147PWQW2K7currentClick) {
+      return cv_mo312147PWQW2K7currentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 6:53 MinsBeing that are Family is in the middle of 3 Year Trip around the World with our daughter who turns 3 this month, we require a camera that is waterproof and durable. This is is our 4th model of the Olympus Stylus so we are not newbies to this Series, though we are on the simple side of taking photos & videos.The most important features when purchasing such a camera are the following 3 features:1) Waterproof up to 33ft: This is big for us since most of our destinations are for surf and I also like to take it surfing...in Big Waves!2) Shockproof from 6.6ft. Between myself, my wife and my little girl...you better believe that there is going to be an occasional drop or 23) Freeze proof down to 14F / -10C If we are not in the waves, we like to go snowboarding in the mountains.Here is the newest of features that had us upgrade to the latest model - High Definition (HD) video. I just purchased the camera over the weekend and have taken amazing HD video while surfing out on the North Shore of Hawaii...and the waves were big and it kept ticking.The 8010 has many features for picture taking though it has been simplified so that anyone can open the box and start taking quality photos & video right out of the box.One feature that I very much enjoy, is the dedicated Camera & Video button so that you do not have to change modes when in action.A disadvantage that I have found is that you have to have your camera plugged in to charge.

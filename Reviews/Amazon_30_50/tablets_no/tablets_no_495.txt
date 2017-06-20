@@ -1,0 +1,1 @@
+Very nice and portable machine. First thing is to remove most of the Levono software which does not add much feature-wise but decreases performance and is overall "buggy." Once stripped down the machine ran great and the touch screen experience is very well done.

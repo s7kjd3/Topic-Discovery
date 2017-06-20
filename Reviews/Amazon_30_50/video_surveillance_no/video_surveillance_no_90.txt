@@ -1,0 +1,1 @@
+using it inside door to alert us of customers entering business. Since it has 400' sensor, it picks up reflections and outside movement. This may be solved by putting shield one side to limit laser to those walking through laser

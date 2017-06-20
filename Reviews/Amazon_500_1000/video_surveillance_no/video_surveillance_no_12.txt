@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moUJEL53VB3R2WembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moUJEL53VB3R2Wrefresh_preplay() {
+
+document.getElementById("cv_moUJEL53VB3R2WchiDiv").innerHTML = document.getElementById("cv_moUJEL53VB3R2WhiddenPre").innerHTML;
+};
+cv_moUJEL53VB3R2Wrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moUJEL53VB3R2Wso;	   
+
+
+function cv_moUJEL53VB3R2WloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moUJEL53VB3R2Wso = new SWFObject(swfLocation, "cv_moUJEL53VB3R2WAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moUJEL53VB3R2Wso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moUJEL53VB3R2Wso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moUJEL53VB3R2Wso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moUJEL53VB3R2Wso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moUJEL53VB3R2Wso.setAttribute("height", swfHeight);
+          cv_moUJEL53VB3R2Wso.setAttribute("width", swfWidth);
+          cv_moUJEL53VB3R2Wso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moUJEL53VB3R2Wso.write("cv_moUJEL53VB3R2Wflashcontent")) {
+          fp_resizePlayerSpace('cv_moUJEL53VB3R2W', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moUJEL53VB3R2W';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moUJEL53VB3R2W', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moUJEL53VB3R2WloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moUJEL53VB3R2W";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m23716XSR09EWZ";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m23716XSR09EWZ";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RL8S22PXOXXT6";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m23716XSR09EWZ/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moUJEL53VB3R2Wduration')) {
+      document.getElementById('cv_moUJEL53VB3R2Wduration').style.display='none';
+    }
+    cv_moUJEL53VB3R2WloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moUJEL53VB3R2WloadSwf(movieID, playerVersion) {
+   return _cv_moUJEL53VB3R2WloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moUJEL53VB3R2WnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moUJEL53VB3R2W', 0, h);
+}
+
+function cv_moUJEL53VB3R2WresetPlayer(w,h,bw,cc) {
+  cv_moUJEL53VB3R2WnewHeight(h);
+
+  cv_moUJEL53VB3R2Wso.addVariable("resetBandwidth", bw);
+  cv_moUJEL53VB3R2Wso.addVariable("cacheCode", cc);
+  cv_moUJEL53VB3R2Wso.setAttribute("height", h);
+  cv_moUJEL53VB3R2Wso.setAttribute("width", w);
+  cv_moUJEL53VB3R2Wso.write("cv_moUJEL53VB3R2Wflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moUJEL53VB3R2WRollOverImg = new Image();
+cv_moUJEL53VB3R2WRollOverImg.src = "http://ecx.images-amazon.com/images/I/91XfS7AircS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moUJEL53VB3R2Wpreplay = document.getElementById('cv_moUJEL53VB3R2WpreplayImageId');
+if (cv_moUJEL53VB3R2Wpreplay) {
+  cv_moUJEL53VB3R2Wpreplay.onmouseover = function() {
+    cv_moUJEL53VB3R2Wpreplay.src = "http://ecx.images-amazon.com/images/I/91XfS7AircS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moUJEL53VB3R2Wpreplay.onmouseout = function() {
+    cv_moUJEL53VB3R2Wpreplay.src = "http://ecx.images-amazon.com/images/I/91XfS7AircS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moUJEL53VB3R2Wpreplay.parentNode;
+
+  var cv_moUJEL53VB3R2WcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moUJEL53VB3R2WcurrentClick) {
+      return cv_moUJEL53VB3R2WcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:04 MinsNice, simple device, but it does NOT work well mounted to the gas tank of a motorcycle.The suction cup on this unit is not rigidly mounted to the base. I suspect this is because the manufacturers envision this unit to be mounted to a concave surface like the inside of a windshield.The gas tank on a motorcycle is convex, and this leaves a large gap between the suction cup and the main base.In the attached video, the unit held my old Flip Ultra Video Camer during the ride, but as soon as I turned the engine off in the drive way, the suction cup lost its grip and the whole unit fell away. Luckily, I had tethered the entire assembly to my forearm using a lanyard so I did not lose anything.

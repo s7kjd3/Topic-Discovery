@@ -1,0 +1,1 @@
+Not too reliable. I can't keep the web based access working even with an auto restart everyday. I have to restart this camera about 2 a day to keep the web based access working. The local access works fine.

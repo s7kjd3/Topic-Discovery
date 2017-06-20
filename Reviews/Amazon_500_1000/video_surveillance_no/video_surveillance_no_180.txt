@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moDQHJ8YD8P302embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moDQHJ8YD8P302refresh_preplay() {
+
+document.getElementById("cv_moDQHJ8YD8P302chiDiv").innerHTML = document.getElementById("cv_moDQHJ8YD8P302hiddenPre").innerHTML;
+};
+cv_moDQHJ8YD8P302refresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moDQHJ8YD8P302so;	   
+
+
+function cv_moDQHJ8YD8P302loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moDQHJ8YD8P302so = new SWFObject(swfLocation, "cv_moDQHJ8YD8P302AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moDQHJ8YD8P302so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moDQHJ8YD8P302so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moDQHJ8YD8P302so.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moDQHJ8YD8P302so.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moDQHJ8YD8P302so.setAttribute("height", swfHeight);
+          cv_moDQHJ8YD8P302so.setAttribute("width", swfWidth);
+          cv_moDQHJ8YD8P302so.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moDQHJ8YD8P302so.write("cv_moDQHJ8YD8P302flashcontent")) {
+          fp_resizePlayerSpace('cv_moDQHJ8YD8P302', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moDQHJ8YD8P302';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moDQHJ8YD8P302', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moDQHJ8YD8P302loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moDQHJ8YD8P302";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1QNTF1S0QZA5I";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1QNTF1S0QZA5I";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R1KNJED89FAW0K";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1QNTF1S0QZA5I/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moDQHJ8YD8P302duration')) {
+      document.getElementById('cv_moDQHJ8YD8P302duration').style.display='none';
+    }
+    cv_moDQHJ8YD8P302loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moDQHJ8YD8P302loadSwf(movieID, playerVersion) {
+   return _cv_moDQHJ8YD8P302loadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moDQHJ8YD8P302newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moDQHJ8YD8P302', 0, h);
+}
+
+function cv_moDQHJ8YD8P302resetPlayer(w,h,bw,cc) {
+  cv_moDQHJ8YD8P302newHeight(h);
+
+  cv_moDQHJ8YD8P302so.addVariable("resetBandwidth", bw);
+  cv_moDQHJ8YD8P302so.addVariable("cacheCode", cc);
+  cv_moDQHJ8YD8P302so.setAttribute("height", h);
+  cv_moDQHJ8YD8P302so.setAttribute("width", w);
+  cv_moDQHJ8YD8P302so.write("cv_moDQHJ8YD8P302flashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moDQHJ8YD8P302RollOverImg = new Image();
+cv_moDQHJ8YD8P302RollOverImg.src = "http://ecx.images-amazon.com/images/I/81sjsWm7tSS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moDQHJ8YD8P302preplay = document.getElementById('cv_moDQHJ8YD8P302preplayImageId');
+if (cv_moDQHJ8YD8P302preplay) {
+  cv_moDQHJ8YD8P302preplay.onmouseover = function() {
+    cv_moDQHJ8YD8P302preplay.src = "http://ecx.images-amazon.com/images/I/81sjsWm7tSS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moDQHJ8YD8P302preplay.onmouseout = function() {
+    cv_moDQHJ8YD8P302preplay.src = "http://ecx.images-amazon.com/images/I/81sjsWm7tSS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moDQHJ8YD8P302preplay.parentNode;
+
+  var cv_moDQHJ8YD8P302currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moDQHJ8YD8P302currentClick) {
+      return cv_moDQHJ8YD8P302currentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 2:44 MinsA short video to show the detector in use.  I don't subject it to any test fumes in this video.

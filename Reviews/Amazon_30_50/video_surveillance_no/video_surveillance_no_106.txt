@@ -1,0 +1,1 @@
+Oh it works alright but it also has lots of false alarms.  I'm working with to try to locate it where it won't go off every five minutes.  Can't determine if its clouds, shadows or wind that causes it to go off so often.

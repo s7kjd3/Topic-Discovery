@@ -1,0 +1,1 @@
+We use the "Black" drives throughout our systems including inside our Thecus servers and as second drives on our desktop PCs with no serious problems.  In five years, they just keep going.  We still always don't trust any hard drive.... always keep backups.

@@ -1,0 +1,1 @@
+This system is being used inside a building that has only two offices in use on the floor. With this it is possible to know if someone is wandering about. The distance is not great so I can't varify true distance but it does 30 feet inside just fine.

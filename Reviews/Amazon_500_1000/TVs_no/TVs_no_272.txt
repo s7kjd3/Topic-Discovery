@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moDKLOCIJEM4PBembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moDKLOCIJEM4PBrefresh_preplay() {
+
+document.getElementById("cv_moDKLOCIJEM4PBchiDiv").innerHTML = document.getElementById("cv_moDKLOCIJEM4PBhiddenPre").innerHTML;
+};
+cv_moDKLOCIJEM4PBrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moDKLOCIJEM4PBso;	   
+
+
+function cv_moDKLOCIJEM4PBloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moDKLOCIJEM4PBso = new SWFObject(swfLocation, "cv_moDKLOCIJEM4PBAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moDKLOCIJEM4PBso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moDKLOCIJEM4PBso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moDKLOCIJEM4PBso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moDKLOCIJEM4PBso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moDKLOCIJEM4PBso.setAttribute("height", swfHeight);
+          cv_moDKLOCIJEM4PBso.setAttribute("width", swfWidth);
+          cv_moDKLOCIJEM4PBso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moDKLOCIJEM4PBso.write("cv_moDKLOCIJEM4PBflashcontent")) {
+          fp_resizePlayerSpace('cv_moDKLOCIJEM4PB', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moDKLOCIJEM4PB';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moDKLOCIJEM4PB', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moDKLOCIJEM4PBloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moDKLOCIJEM4PB";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "mENJLJZ5FGKOL";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "mENJLJZ5FGKOL";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2KM3G0IUGXTDH";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/mENJLJZ5FGKOL/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moDKLOCIJEM4PBduration')) {
+      document.getElementById('cv_moDKLOCIJEM4PBduration').style.display='none';
+    }
+    cv_moDKLOCIJEM4PBloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moDKLOCIJEM4PBloadSwf(movieID, playerVersion) {
+   return _cv_moDKLOCIJEM4PBloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moDKLOCIJEM4PBnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moDKLOCIJEM4PB', 0, h);
+}
+
+function cv_moDKLOCIJEM4PBresetPlayer(w,h,bw,cc) {
+  cv_moDKLOCIJEM4PBnewHeight(h);
+
+  cv_moDKLOCIJEM4PBso.addVariable("resetBandwidth", bw);
+  cv_moDKLOCIJEM4PBso.addVariable("cacheCode", cc);
+  cv_moDKLOCIJEM4PBso.setAttribute("height", h);
+  cv_moDKLOCIJEM4PBso.setAttribute("width", w);
+  cv_moDKLOCIJEM4PBso.write("cv_moDKLOCIJEM4PBflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moDKLOCIJEM4PBRollOverImg = new Image();
+cv_moDKLOCIJEM4PBRollOverImg.src = "http://ecx.images-amazon.com/images/I/81PRvbdz4bS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moDKLOCIJEM4PBpreplay = document.getElementById('cv_moDKLOCIJEM4PBpreplayImageId');
+if (cv_moDKLOCIJEM4PBpreplay) {
+  cv_moDKLOCIJEM4PBpreplay.onmouseover = function() {
+    cv_moDKLOCIJEM4PBpreplay.src = "http://ecx.images-amazon.com/images/I/81PRvbdz4bS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moDKLOCIJEM4PBpreplay.onmouseout = function() {
+    cv_moDKLOCIJEM4PBpreplay.src = "http://ecx.images-amazon.com/images/I/81PRvbdz4bS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moDKLOCIJEM4PBpreplay.parentNode;
+
+  var cv_moDKLOCIJEM4PBcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moDKLOCIJEM4PBcurrentClick) {
+      return cv_moDKLOCIJEM4PBcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:09 MinsI previously owned the xbr4 and 6 and,sad to say this tv is my favorite.You may not agree with it because of its presets(default picture settings),but with pro calibration and a dice of your own,you will be impressed.Some and many even pros say the 120hrt isnt present,but the thing is it is.I spent time calibrating my set for best picture possible and finding differences between motionflow and motion enhanced.Motionflow has a more lively on set feel with very obvious artifacts when high but,this is why Sharp has pulled me in.Motion enhanced creates the lively blend,you see if you have 20/20 vision like myself you will notice the effect to dramatically make you feel onset but also watching a movie,pure greatness.Im rating 24p 48/50 movies and 60p 100/120 games based on my gtx 280 and blu ray Playback,so imagine the effects of pure video plus nvidia control panal settings of 100% sharpness and 100% noise reduction with cuda.The tv may fall short if you only watch dtv but hdtv also shines.I also had heat issues before with my xbr brands,but this set barely pumps heat and is very light;no 1 eco friendly set in the world.Im planning on buying another set.Believe me the price is a steal,cant wait to play god of war 3 bottom line this is a must buy for hardcore gamers and day to day movie watchers 5 star general.

@@ -1,0 +1,1 @@
+This product works as expected, but the implementation of having the cord go to the mic, then to the earpiece is a bit clunky. Not sure how that would be improved, except perhaps with a cord that is separate for the earpiece and mic.

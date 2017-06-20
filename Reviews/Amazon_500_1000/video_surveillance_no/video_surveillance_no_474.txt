@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moV5A38P7Y40RJembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moV5A38P7Y40RJrefresh_preplay() {
+
+document.getElementById("cv_moV5A38P7Y40RJchiDiv").innerHTML = document.getElementById("cv_moV5A38P7Y40RJhiddenPre").innerHTML;
+};
+cv_moV5A38P7Y40RJrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moV5A38P7Y40RJso;	   
+
+
+function cv_moV5A38P7Y40RJloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moV5A38P7Y40RJso = new SWFObject(swfLocation, "cv_moV5A38P7Y40RJAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moV5A38P7Y40RJso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moV5A38P7Y40RJso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moV5A38P7Y40RJso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moV5A38P7Y40RJso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moV5A38P7Y40RJso.setAttribute("height", swfHeight);
+          cv_moV5A38P7Y40RJso.setAttribute("width", swfWidth);
+          cv_moV5A38P7Y40RJso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moV5A38P7Y40RJso.write("cv_moV5A38P7Y40RJflashcontent")) {
+          fp_resizePlayerSpace('cv_moV5A38P7Y40RJ', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moV5A38P7Y40RJ';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moV5A38P7Y40RJ', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moV5A38P7Y40RJloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moV5A38P7Y40RJ";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3NUSM6D7NLYYE";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3NUSM6D7NLYYE";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2TFXROBX05AY5";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3NUSM6D7NLYYE/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moV5A38P7Y40RJduration')) {
+      document.getElementById('cv_moV5A38P7Y40RJduration').style.display='none';
+    }
+    cv_moV5A38P7Y40RJloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moV5A38P7Y40RJloadSwf(movieID, playerVersion) {
+   return _cv_moV5A38P7Y40RJloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moV5A38P7Y40RJnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moV5A38P7Y40RJ', 0, h);
+}
+
+function cv_moV5A38P7Y40RJresetPlayer(w,h,bw,cc) {
+  cv_moV5A38P7Y40RJnewHeight(h);
+
+  cv_moV5A38P7Y40RJso.addVariable("resetBandwidth", bw);
+  cv_moV5A38P7Y40RJso.addVariable("cacheCode", cc);
+  cv_moV5A38P7Y40RJso.setAttribute("height", h);
+  cv_moV5A38P7Y40RJso.setAttribute("width", w);
+  cv_moV5A38P7Y40RJso.write("cv_moV5A38P7Y40RJflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moV5A38P7Y40RJRollOverImg = new Image();
+cv_moV5A38P7Y40RJRollOverImg.src = "http://ecx.images-amazon.com/images/I/81TJyfbyVtS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moV5A38P7Y40RJpreplay = document.getElementById('cv_moV5A38P7Y40RJpreplayImageId');
+if (cv_moV5A38P7Y40RJpreplay) {
+  cv_moV5A38P7Y40RJpreplay.onmouseover = function() {
+    cv_moV5A38P7Y40RJpreplay.src = "http://ecx.images-amazon.com/images/I/81TJyfbyVtS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moV5A38P7Y40RJpreplay.onmouseout = function() {
+    cv_moV5A38P7Y40RJpreplay.src = "http://ecx.images-amazon.com/images/I/81TJyfbyVtS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moV5A38P7Y40RJpreplay.parentNode;
+
+  var cv_moV5A38P7Y40RJcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moV5A38P7Y40RJcurrentClick) {
+      return cv_moV5A38P7Y40RJcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 2:10 MinsIf you are looking for a baby video monitor that works pretty well for under $100 - this is a very good unit - it is a value buy.It displays color in day time, black & white/gray scale in night time and also transmits any small sounds the baby makes to alert you.  It supports upto 3 additional cameras so that you can monitor different kids/babies/other kids in different rooms or just as a security camera.What is not so good ?  * The Unit is cheaply built  * Not good viewing angle - just 20 deg tilt will blur out the image  * Does not support WIfi - means if you want to watch your kids/babies being taken care by a baby sitter you cannot do it.  If it were Wifi enabled, then you could have watched your kids/babies and baby sitter from your iphone/ipadBTW - setup is very easy, infact virtually no setup required.

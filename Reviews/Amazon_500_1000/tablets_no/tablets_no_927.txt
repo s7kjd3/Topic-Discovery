@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo24HSSHDPTQWMGembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo24HSSHDPTQWMGrefresh_preplay() {
+
+document.getElementById("cv_mo24HSSHDPTQWMGchiDiv").innerHTML = document.getElementById("cv_mo24HSSHDPTQWMGhiddenPre").innerHTML;
+};
+cv_mo24HSSHDPTQWMGrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo24HSSHDPTQWMGso;	   
+
+
+function cv_mo24HSSHDPTQWMGloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo24HSSHDPTQWMGso = new SWFObject(swfLocation, "cv_mo24HSSHDPTQWMGAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo24HSSHDPTQWMGso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo24HSSHDPTQWMGso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo24HSSHDPTQWMGso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo24HSSHDPTQWMGso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo24HSSHDPTQWMGso.setAttribute("height", swfHeight);
+          cv_mo24HSSHDPTQWMGso.setAttribute("width", swfWidth);
+          cv_mo24HSSHDPTQWMGso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo24HSSHDPTQWMGso.write("cv_mo24HSSHDPTQWMGflashcontent")) {
+          fp_resizePlayerSpace('cv_mo24HSSHDPTQWMG', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo24HSSHDPTQWMG';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo24HSSHDPTQWMG', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo24HSSHDPTQWMGloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo24HSSHDPTQWMG";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3SPVRUR7EJRN2";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3SPVRUR7EJRN2";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2YBRF421OEH5H";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3SPVRUR7EJRN2/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo24HSSHDPTQWMGduration')) {
+      document.getElementById('cv_mo24HSSHDPTQWMGduration').style.display='none';
+    }
+    cv_mo24HSSHDPTQWMGloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo24HSSHDPTQWMGloadSwf(movieID, playerVersion) {
+   return _cv_mo24HSSHDPTQWMGloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo24HSSHDPTQWMGnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo24HSSHDPTQWMG', 0, h);
+}
+
+function cv_mo24HSSHDPTQWMGresetPlayer(w,h,bw,cc) {
+  cv_mo24HSSHDPTQWMGnewHeight(h);
+
+  cv_mo24HSSHDPTQWMGso.addVariable("resetBandwidth", bw);
+  cv_mo24HSSHDPTQWMGso.addVariable("cacheCode", cc);
+  cv_mo24HSSHDPTQWMGso.setAttribute("height", h);
+  cv_mo24HSSHDPTQWMGso.setAttribute("width", w);
+  cv_mo24HSSHDPTQWMGso.write("cv_mo24HSSHDPTQWMGflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo24HSSHDPTQWMGRollOverImg = new Image();
+cv_mo24HSSHDPTQWMGRollOverImg.src = "http://ecx.images-amazon.com/images/I/71vG4C%2BmJ6S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo24HSSHDPTQWMGpreplay = document.getElementById('cv_mo24HSSHDPTQWMGpreplayImageId');
+if (cv_mo24HSSHDPTQWMGpreplay) {
+  cv_mo24HSSHDPTQWMGpreplay.onmouseover = function() {
+    cv_mo24HSSHDPTQWMGpreplay.src = "http://ecx.images-amazon.com/images/I/71vG4C%2BmJ6S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo24HSSHDPTQWMGpreplay.onmouseout = function() {
+    cv_mo24HSSHDPTQWMGpreplay.src = "http://ecx.images-amazon.com/images/I/71vG4C%2BmJ6S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo24HSSHDPTQWMGpreplay.parentNode;
+
+  var cv_mo24HSSHDPTQWMGcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo24HSSHDPTQWMGcurrentClick) {
+      return cv_mo24HSSHDPTQWMGcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:51 MinsI have used just about 2 weeks I am satisfied with the purchaseThe screen size is perfect unlike other 7-inch tablet to rotate a screen is very narrow, I struggled a bit to adapt to the use of the screen because I have a phone with capacitive screen and responds to touch and very sensitive this should push a little harder (no need stylus pen)The battery life is acceptable around 5 to 6 hours with uninterrupted useThe screen resolution could be better but I remind that cost me less than $ 200I play movies (avi) files without problemsMake video calls anywhere without sitting in front of a pcThe front camera can be used for emergency and videos or photos is not very practical to take pictures with a very large device further that the quality is not the best if there is no daylightThe sound of the speakers is acceptable in indoor environmentnegativeThe gogle app (gmail, youtube) can not be installed unless root the device. (very easy to do in three clicks, I have not done it yet for fear of not being able to have future firmware updates)It's a bit heavy compared to the Kindle firecreaks when handling but it feels solidthe location of the volume button is very close to the button that locks the screenedited 10/02/12after approximately one month of use the device stopped working under normal conditions of use (not root) 1 month ago was sent to the manufacturer's authorized service technician in Venezuela who reported that the device had to be replaced and I'm still waiting for the new one

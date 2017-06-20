@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo4QB1D6HVVYPHembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo4QB1D6HVVYPHrefresh_preplay() {
+
+document.getElementById("cv_mo4QB1D6HVVYPHchiDiv").innerHTML = document.getElementById("cv_mo4QB1D6HVVYPHhiddenPre").innerHTML;
+};
+cv_mo4QB1D6HVVYPHrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo4QB1D6HVVYPHso;	   
+
+
+function cv_mo4QB1D6HVVYPHloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo4QB1D6HVVYPHso = new SWFObject(swfLocation, "cv_mo4QB1D6HVVYPHAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo4QB1D6HVVYPHso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo4QB1D6HVVYPHso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo4QB1D6HVVYPHso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo4QB1D6HVVYPHso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo4QB1D6HVVYPHso.setAttribute("height", swfHeight);
+          cv_mo4QB1D6HVVYPHso.setAttribute("width", swfWidth);
+          cv_mo4QB1D6HVVYPHso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo4QB1D6HVVYPHso.write("cv_mo4QB1D6HVVYPHflashcontent")) {
+          fp_resizePlayerSpace('cv_mo4QB1D6HVVYPH', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo4QB1D6HVVYPH';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo4QB1D6HVVYPH', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo4QB1D6HVVYPHloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo4QB1D6HVVYPH";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1ES1MVSWI9A8X";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1ES1MVSWI9A8X";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R2VEHLEF7K99TI";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1ES1MVSWI9A8X/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo4QB1D6HVVYPHduration')) {
+      document.getElementById('cv_mo4QB1D6HVVYPHduration').style.display='none';
+    }
+    cv_mo4QB1D6HVVYPHloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo4QB1D6HVVYPHloadSwf(movieID, playerVersion) {
+   return _cv_mo4QB1D6HVVYPHloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo4QB1D6HVVYPHnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo4QB1D6HVVYPH', 0, h);
+}
+
+function cv_mo4QB1D6HVVYPHresetPlayer(w,h,bw,cc) {
+  cv_mo4QB1D6HVVYPHnewHeight(h);
+
+  cv_mo4QB1D6HVVYPHso.addVariable("resetBandwidth", bw);
+  cv_mo4QB1D6HVVYPHso.addVariable("cacheCode", cc);
+  cv_mo4QB1D6HVVYPHso.setAttribute("height", h);
+  cv_mo4QB1D6HVVYPHso.setAttribute("width", w);
+  cv_mo4QB1D6HVVYPHso.write("cv_mo4QB1D6HVVYPHflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo4QB1D6HVVYPHRollOverImg = new Image();
+cv_mo4QB1D6HVVYPHRollOverImg.src = "http://ecx.images-amazon.com/images/I/814BUdtV5NS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo4QB1D6HVVYPHpreplay = document.getElementById('cv_mo4QB1D6HVVYPHpreplayImageId');
+if (cv_mo4QB1D6HVVYPHpreplay) {
+  cv_mo4QB1D6HVVYPHpreplay.onmouseover = function() {
+    cv_mo4QB1D6HVVYPHpreplay.src = "http://ecx.images-amazon.com/images/I/814BUdtV5NS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo4QB1D6HVVYPHpreplay.onmouseout = function() {
+    cv_mo4QB1D6HVVYPHpreplay.src = "http://ecx.images-amazon.com/images/I/814BUdtV5NS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo4QB1D6HVVYPHpreplay.parentNode;
+
+  var cv_mo4QB1D6HVVYPHcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo4QB1D6HVVYPHcurrentClick) {
+      return cv_mo4QB1D6HVVYPHcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 7:13 MinsThere is a delay in the A/V stream making it somewhat useless when using the cam with other/different cams (hardware) when using Wirecast and Ustream Producer. The only way you could possibly use this with Wirecast and expect good A/V sync is when using only these cameras and running the audio into the cam via it's mic jack thus making the A/V sync stream run simultaneously. Don't get me wrong the camera is great! The P/T/Z is amazing and if you don't mind the delay, which JVC says is about 1-5 sec (3sec with direct for me) then it makes a perfect monitoring cam. Wish I could use it but for Wirecast and Ustream Producer there is no way! Retailers should be mentioning this in their specifications to avoid lots of returns. I was your Guinea Pig. Your welcome! ~J

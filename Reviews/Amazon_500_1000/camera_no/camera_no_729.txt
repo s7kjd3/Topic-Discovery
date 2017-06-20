@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo2DAQU5JI1NRLKembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo2DAQU5JI1NRLKrefresh_preplay() {
+
+document.getElementById("cv_mo2DAQU5JI1NRLKchiDiv").innerHTML = document.getElementById("cv_mo2DAQU5JI1NRLKhiddenPre").innerHTML;
+};
+cv_mo2DAQU5JI1NRLKrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo2DAQU5JI1NRLKso;	   
+
+
+function cv_mo2DAQU5JI1NRLKloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo2DAQU5JI1NRLKso = new SWFObject(swfLocation, "cv_mo2DAQU5JI1NRLKAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo2DAQU5JI1NRLKso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo2DAQU5JI1NRLKso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo2DAQU5JI1NRLKso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo2DAQU5JI1NRLKso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo2DAQU5JI1NRLKso.setAttribute("height", swfHeight);
+          cv_mo2DAQU5JI1NRLKso.setAttribute("width", swfWidth);
+          cv_mo2DAQU5JI1NRLKso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo2DAQU5JI1NRLKso.write("cv_mo2DAQU5JI1NRLKflashcontent")) {
+          fp_resizePlayerSpace('cv_mo2DAQU5JI1NRLK', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo2DAQU5JI1NRLK';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo2DAQU5JI1NRLK', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo2DAQU5JI1NRLKloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo2DAQU5JI1NRLK";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "mYE561YO0C2BF";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "mYE561YO0C2BF";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R3IG5BV6MHCBN7";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/mYE561YO0C2BF/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo2DAQU5JI1NRLKduration')) {
+      document.getElementById('cv_mo2DAQU5JI1NRLKduration').style.display='none';
+    }
+    cv_mo2DAQU5JI1NRLKloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo2DAQU5JI1NRLKloadSwf(movieID, playerVersion) {
+   return _cv_mo2DAQU5JI1NRLKloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo2DAQU5JI1NRLKnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo2DAQU5JI1NRLK', 0, h);
+}
+
+function cv_mo2DAQU5JI1NRLKresetPlayer(w,h,bw,cc) {
+  cv_mo2DAQU5JI1NRLKnewHeight(h);
+
+  cv_mo2DAQU5JI1NRLKso.addVariable("resetBandwidth", bw);
+  cv_mo2DAQU5JI1NRLKso.addVariable("cacheCode", cc);
+  cv_mo2DAQU5JI1NRLKso.setAttribute("height", h);
+  cv_mo2DAQU5JI1NRLKso.setAttribute("width", w);
+  cv_mo2DAQU5JI1NRLKso.write("cv_mo2DAQU5JI1NRLKflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo2DAQU5JI1NRLKRollOverImg = new Image();
+cv_mo2DAQU5JI1NRLKRollOverImg.src = "http://ecx.images-amazon.com/images/I/91IgqIgGWXS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo2DAQU5JI1NRLKpreplay = document.getElementById('cv_mo2DAQU5JI1NRLKpreplayImageId');
+if (cv_mo2DAQU5JI1NRLKpreplay) {
+  cv_mo2DAQU5JI1NRLKpreplay.onmouseover = function() {
+    cv_mo2DAQU5JI1NRLKpreplay.src = "http://ecx.images-amazon.com/images/I/91IgqIgGWXS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo2DAQU5JI1NRLKpreplay.onmouseout = function() {
+    cv_mo2DAQU5JI1NRLKpreplay.src = "http://ecx.images-amazon.com/images/I/91IgqIgGWXS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo2DAQU5JI1NRLKpreplay.parentNode;
+
+  var cv_mo2DAQU5JI1NRLKcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo2DAQU5JI1NRLKcurrentClick) {
+      return cv_mo2DAQU5JI1NRLKcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 9:56 MinsI have tried many cameras before finding and loving this one. A lot of folks gave bad reviews on this camera. I think this is not a fair judgement. As I believe that quality of pictures are determined by the "photographer"-you, who handle the camera, not from the cost of a camera. I have seen some of my friends take sloppy photos with $2,000 camera. You can take very nice pictures if you learn how to use all the built-in functions offered by SP-800UZ. If you love wildlife like me and like to take birds and nature and DO NOT want to carry heavy duty DSLR equipment, this camera is for you. A lot of people complained pictures got very blurry at higher zoom. I found an easy solution by adding a tripod. You can manually adjust many details, including the lighting makes this point and shot camera almost an entry level DSLR. Again, you just need to learn all the functions well and to me, I downloaded a user manual from Olympus official site ([...]) and read the total 73 pages. Please save the user manual on your PC instead of printing it(save trees). Some people also complained about the manual does not come with the package. Hello, please wake up, we are at a tech era. You can find any thing online these days.I bought this camera in July and did not want to write any review until I am certain its capability. When I showed some of my bird pictures to friends, they told me "you must have a nice DSLR". I told them "nop". They just could not believe me. Sure, if you are a professional, you should not look at this review or this camera. But, if you are an amature or you do not have the $ to buy a DSLR (let's say you are saving $ for that), or you just want to take some memorable photos, you might want to consider Olympus SP-800UZ.To see is to believe. Check my birding website at [...] (copy this link and paste onto your search engine)for all photos (photos taken after July this year) and videos/Movies (BTW, great HD videos) I took from this little camera. Again, this is not a perfect camera. But for the price of it, it is at top of line at 30X zoom and, let this camera amazes you![...]P.S. I also inserted a recent movie with photos and videos shot by SP-800UZ and make sure you pay a visit!

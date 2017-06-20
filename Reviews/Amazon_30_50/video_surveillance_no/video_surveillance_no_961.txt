@@ -1,0 +1,1 @@
+The fake tv turn on when it shouldn't in complete darkness.  The light sensor doesn't work properly.  It's okay if you buy a separate timer to turn it on an off.

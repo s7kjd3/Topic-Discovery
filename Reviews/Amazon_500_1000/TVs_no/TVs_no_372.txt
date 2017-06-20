@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1ZYZDEDVE99GDembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1ZYZDEDVE99GDrefresh_preplay() {
+
+document.getElementById("cv_mo1ZYZDEDVE99GDchiDiv").innerHTML = document.getElementById("cv_mo1ZYZDEDVE99GDhiddenPre").innerHTML;
+};
+cv_mo1ZYZDEDVE99GDrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1ZYZDEDVE99GDso;	   
+
+
+function cv_mo1ZYZDEDVE99GDloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1ZYZDEDVE99GDso = new SWFObject(swfLocation, "cv_mo1ZYZDEDVE99GDAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1ZYZDEDVE99GDso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1ZYZDEDVE99GDso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1ZYZDEDVE99GDso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1ZYZDEDVE99GDso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1ZYZDEDVE99GDso.setAttribute("height", swfHeight);
+          cv_mo1ZYZDEDVE99GDso.setAttribute("width", swfWidth);
+          cv_mo1ZYZDEDVE99GDso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1ZYZDEDVE99GDso.write("cv_mo1ZYZDEDVE99GDflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1ZYZDEDVE99GD', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1ZYZDEDVE99GD';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1ZYZDEDVE99GD', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1ZYZDEDVE99GDloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1ZYZDEDVE99GD";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m6SM94ZYEU23N";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m6SM94ZYEU23N";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R278ZI8MDRW7QR";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m6SM94ZYEU23N/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1ZYZDEDVE99GDduration')) {
+      document.getElementById('cv_mo1ZYZDEDVE99GDduration').style.display='none';
+    }
+    cv_mo1ZYZDEDVE99GDloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1ZYZDEDVE99GDloadSwf(movieID, playerVersion) {
+   return _cv_mo1ZYZDEDVE99GDloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1ZYZDEDVE99GDnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1ZYZDEDVE99GD', 0, h);
+}
+
+function cv_mo1ZYZDEDVE99GDresetPlayer(w,h,bw,cc) {
+  cv_mo1ZYZDEDVE99GDnewHeight(h);
+
+  cv_mo1ZYZDEDVE99GDso.addVariable("resetBandwidth", bw);
+  cv_mo1ZYZDEDVE99GDso.addVariable("cacheCode", cc);
+  cv_mo1ZYZDEDVE99GDso.setAttribute("height", h);
+  cv_mo1ZYZDEDVE99GDso.setAttribute("width", w);
+  cv_mo1ZYZDEDVE99GDso.write("cv_mo1ZYZDEDVE99GDflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1ZYZDEDVE99GDRollOverImg = new Image();
+cv_mo1ZYZDEDVE99GDRollOverImg.src = "http://ecx.images-amazon.com/images/I/71xONIRh6yS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1ZYZDEDVE99GDpreplay = document.getElementById('cv_mo1ZYZDEDVE99GDpreplayImageId');
+if (cv_mo1ZYZDEDVE99GDpreplay) {
+  cv_mo1ZYZDEDVE99GDpreplay.onmouseover = function() {
+    cv_mo1ZYZDEDVE99GDpreplay.src = "http://ecx.images-amazon.com/images/I/71xONIRh6yS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1ZYZDEDVE99GDpreplay.onmouseout = function() {
+    cv_mo1ZYZDEDVE99GDpreplay.src = "http://ecx.images-amazon.com/images/I/71xONIRh6yS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1ZYZDEDVE99GDpreplay.parentNode;
+
+  var cv_mo1ZYZDEDVE99GDcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1ZYZDEDVE99GDcurrentClick) {
+      return cv_mo1ZYZDEDVE99GDcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:04 Minswhen watching movies or Cable I see these green lines that keep popping up when watching wide screen movies, it does it on both Direct TV and PS3 I even switched out my HDMI cables for new ones, same problem, so I took the TV back and got a brand new one again and same problem took it back to a different location and same problem again, had Samsung Send me out a Tech to fix it and he didn't even know what to do, he said he never seen anything like it, I think I may have found the problem out, on this model the AC power cord only has 2 prongs instead of 3 like most HDTV's do, I believe since it's not properly  grounded it keeps getting a shock, so I bought a Monster Cable power strip to help supply "cleaner" power, same problem, Samsung said they would replace it themselves but I won't see the TV for 2 weeks, this is a joke, what can I do? if you have this model watch a wide screen movie when the black bars show on top and bottom and watch the bottom of the screen and tell me if you get the same issue.  I mean I love the TV and everything but those green flashes bother the heck out of me when watching a movie.UPDATE!!!!!if you turn the auto motion to smooth so the picture does not look "shakey" when watching movies, if you turn the auto motion plus to smooth you will see the green lines but if you leave it at standard then you won't see them, this is an issue and Samsung needs to come out with an update.  try it out on your TV if you have this model.

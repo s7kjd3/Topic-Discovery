@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1X20MEJM1UX8XembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1X20MEJM1UX8Xrefresh_preplay() {
+
+document.getElementById("cv_mo1X20MEJM1UX8XchiDiv").innerHTML = document.getElementById("cv_mo1X20MEJM1UX8XhiddenPre").innerHTML;
+};
+cv_mo1X20MEJM1UX8Xrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1X20MEJM1UX8Xso;	   
+
+
+function cv_mo1X20MEJM1UX8XloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1X20MEJM1UX8Xso = new SWFObject(swfLocation, "cv_mo1X20MEJM1UX8XAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1X20MEJM1UX8Xso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1X20MEJM1UX8Xso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1X20MEJM1UX8Xso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1X20MEJM1UX8Xso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1X20MEJM1UX8Xso.setAttribute("height", swfHeight);
+          cv_mo1X20MEJM1UX8Xso.setAttribute("width", swfWidth);
+          cv_mo1X20MEJM1UX8Xso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1X20MEJM1UX8Xso.write("cv_mo1X20MEJM1UX8Xflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1X20MEJM1UX8X', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1X20MEJM1UX8X';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1X20MEJM1UX8X', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1X20MEJM1UX8XloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1X20MEJM1UX8X";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1VH8SZKV2M85J";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1VH8SZKV2M85J";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R1QKN7MXKP5JCO";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1VH8SZKV2M85J/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1X20MEJM1UX8Xduration')) {
+      document.getElementById('cv_mo1X20MEJM1UX8Xduration').style.display='none';
+    }
+    cv_mo1X20MEJM1UX8XloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1X20MEJM1UX8XloadSwf(movieID, playerVersion) {
+   return _cv_mo1X20MEJM1UX8XloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1X20MEJM1UX8XnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1X20MEJM1UX8X', 0, h);
+}
+
+function cv_mo1X20MEJM1UX8XresetPlayer(w,h,bw,cc) {
+  cv_mo1X20MEJM1UX8XnewHeight(h);
+
+  cv_mo1X20MEJM1UX8Xso.addVariable("resetBandwidth", bw);
+  cv_mo1X20MEJM1UX8Xso.addVariable("cacheCode", cc);
+  cv_mo1X20MEJM1UX8Xso.setAttribute("height", h);
+  cv_mo1X20MEJM1UX8Xso.setAttribute("width", w);
+  cv_mo1X20MEJM1UX8Xso.write("cv_mo1X20MEJM1UX8Xflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1X20MEJM1UX8XRollOverImg = new Image();
+cv_mo1X20MEJM1UX8XRollOverImg.src = "http://ecx.images-amazon.com/images/I/91tX8JipBSS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1X20MEJM1UX8Xpreplay = document.getElementById('cv_mo1X20MEJM1UX8XpreplayImageId');
+if (cv_mo1X20MEJM1UX8Xpreplay) {
+  cv_mo1X20MEJM1UX8Xpreplay.onmouseover = function() {
+    cv_mo1X20MEJM1UX8Xpreplay.src = "http://ecx.images-amazon.com/images/I/91tX8JipBSS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1X20MEJM1UX8Xpreplay.onmouseout = function() {
+    cv_mo1X20MEJM1UX8Xpreplay.src = "http://ecx.images-amazon.com/images/I/91tX8JipBSS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1X20MEJM1UX8Xpreplay.parentNode;
+
+  var cv_mo1X20MEJM1UX8XcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1X20MEJM1UX8XcurrentClick) {
+      return cv_mo1X20MEJM1UX8XcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 3:03 MinsThese camera's work very well. I would highly recommend. Watch the compilied videos of the crook that breaks into our home. You can even hear the car running in the back ground and get a glimpse of it when he moves the camera, of course you can hear the breaking glass and him attempting to kick the door in when he comes back over an hour later after he moved the camera's. If you want a little piece of mind and looking for easy to setup and good video clarity, buy these.

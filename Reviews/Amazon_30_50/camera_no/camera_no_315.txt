@@ -1,0 +1,1 @@
+This doesn't record all activity.  It seems to only record in 10-15 increments.  When it does record, it emails a 5-10 sec video.  I'm unable to see live video because of where I work, the firewalls don't allow the connection.  The video quality is pretty good.

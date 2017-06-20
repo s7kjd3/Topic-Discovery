@@ -1,0 +1,1 @@
+I have 16 of these drives in various servers in RAID 1 and RAID 5 configurations. They do go to sleep depending on the controller and take a few seconds to wake up, but when running perform as expected.

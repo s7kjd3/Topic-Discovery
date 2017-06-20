@@ -1,0 +1,1 @@
+Out of the box, one end of the signal cable was bad.  I couldn't determine if it was the BNC connector or the wire adjacent to the connector but this video cable did not work at all.

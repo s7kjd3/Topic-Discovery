@@ -1,0 +1,1 @@
+This devise simulates the lights on a color TV.  We like the random patterns that it goes through. Really looks like a TV.  The only draw back is if there is any other light source, it doesn't turn on.  Even how dim the light source is.

@@ -1,0 +1,1 @@
+Used to add Hot spares in a client's Dell PowerEdge 2900 SATA RAID server array.Gives error about not being "certified" drive, but works fine.Will replace all with SAS soon. Using SATA RAID was a bad idea.

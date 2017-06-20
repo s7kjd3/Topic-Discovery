@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moUWGO6HO0F6W6embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moUWGO6HO0F6W6refresh_preplay() {
+
+document.getElementById("cv_moUWGO6HO0F6W6chiDiv").innerHTML = document.getElementById("cv_moUWGO6HO0F6W6hiddenPre").innerHTML;
+};
+cv_moUWGO6HO0F6W6refresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moUWGO6HO0F6W6so;	   
+
+
+function cv_moUWGO6HO0F6W6loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moUWGO6HO0F6W6so = new SWFObject(swfLocation, "cv_moUWGO6HO0F6W6AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moUWGO6HO0F6W6so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moUWGO6HO0F6W6so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moUWGO6HO0F6W6so.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moUWGO6HO0F6W6so.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moUWGO6HO0F6W6so.setAttribute("height", swfHeight);
+          cv_moUWGO6HO0F6W6so.setAttribute("width", swfWidth);
+          cv_moUWGO6HO0F6W6so.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moUWGO6HO0F6W6so.write("cv_moUWGO6HO0F6W6flashcontent")) {
+          fp_resizePlayerSpace('cv_moUWGO6HO0F6W6', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moUWGO6HO0F6W6';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moUWGO6HO0F6W6', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moUWGO6HO0F6W6loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moUWGO6HO0F6W6";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "mULW44PDW32LP";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "mULW44PDW32LP";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RRQ1764ZL80MV";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/mULW44PDW32LP/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moUWGO6HO0F6W6duration')) {
+      document.getElementById('cv_moUWGO6HO0F6W6duration').style.display='none';
+    }
+    cv_moUWGO6HO0F6W6loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moUWGO6HO0F6W6loadSwf(movieID, playerVersion) {
+   return _cv_moUWGO6HO0F6W6loadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moUWGO6HO0F6W6newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moUWGO6HO0F6W6', 0, h);
+}
+
+function cv_moUWGO6HO0F6W6resetPlayer(w,h,bw,cc) {
+  cv_moUWGO6HO0F6W6newHeight(h);
+
+  cv_moUWGO6HO0F6W6so.addVariable("resetBandwidth", bw);
+  cv_moUWGO6HO0F6W6so.addVariable("cacheCode", cc);
+  cv_moUWGO6HO0F6W6so.setAttribute("height", h);
+  cv_moUWGO6HO0F6W6so.setAttribute("width", w);
+  cv_moUWGO6HO0F6W6so.write("cv_moUWGO6HO0F6W6flashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moUWGO6HO0F6W6RollOverImg = new Image();
+cv_moUWGO6HO0F6W6RollOverImg.src = "http://ecx.images-amazon.com/images/I/91Ch0yHZhsS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moUWGO6HO0F6W6preplay = document.getElementById('cv_moUWGO6HO0F6W6preplayImageId');
+if (cv_moUWGO6HO0F6W6preplay) {
+  cv_moUWGO6HO0F6W6preplay.onmouseover = function() {
+    cv_moUWGO6HO0F6W6preplay.src = "http://ecx.images-amazon.com/images/I/91Ch0yHZhsS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moUWGO6HO0F6W6preplay.onmouseout = function() {
+    cv_moUWGO6HO0F6W6preplay.src = "http://ecx.images-amazon.com/images/I/91Ch0yHZhsS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moUWGO6HO0F6W6preplay.parentNode;
+
+  var cv_moUWGO6HO0F6W6currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moUWGO6HO0F6W6currentClick) {
+      return cv_moUWGO6HO0F6W6currentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:46 MinsI was expecting at least a reasonable resolution for a camera system at this price. I bought it for the "Long-range" capability and wireless cameras. I was disappointed. Resolution was worse than $10 kids toy cameras. Resolution was so bad that I could not get facial recognition any farther than 3 feet away from the camera. At the listed range of 40 feet you can't tell the make of a car. I will try to post a video and/or photos to illustrate. On my old 19" monitor the native video is about 3.5 inches diagonally (uber-tiny). When expanded to full-screen (or even half-screen) the video is pixelated and terrible. I would guess night mode frame rate to be about 2-3 frames per second and daytime to be about 12. For $200+ I can get a lot better DVR and cameras. I will not buy this brand again. I recommend you DON'T BUY this.Also color is altered significantly by the fact that the IR switches to night mode in anything but direct full sunlight (meaning you will only get B/W video in most houses unless you have laboratory-bright lighting.)One good thing is the IR lighting is actually very bright. I could see the effects of the light about twenty feet away (although resolution did not allow me to see details even with the light). The bad thing is that the light is so bright that is completely washes out any detail at close range (which is the only rage at which you can see detail due to such poor resolution.)I'll update with a better review if I am able to enhance the video or the company replaces the unit with a reasonable product.The video attached is at maximum resolution and not shrunk by Amazon. That is as good as it gets. Make it full-screen to see what the camera can do (or not do). This was taken under ideal daylight conditions with the receiver less than ten feet from the camera for best possible picture.The claim long-range fails in my opinion for two reasons.1. The wireless cameras will not work in the open at 450 feet as claimed. Effective range in the open was about 150feet. In my house the unit did work through walls and floors just fine, but that is not "long range" as claimed.2. The cameras can't be used for any details past about 3 feet because resolution is so poor. I'm not being picky. The resolution is crappier than the video camera on my son's remote control car which cost a fraction of this system.

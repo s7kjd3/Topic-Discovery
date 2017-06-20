@@ -1,0 +1,1 @@
+The netbook loses the wifi internet connection after a few minutes of being logged on.  A restart sometimes helps, other times it doesn't.  All my other computers, kindles, cell phones, etc. have no problem staying connected to the internet.  The problem lies within this netbook.  Sorry I bought it.

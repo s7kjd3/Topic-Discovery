@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo1OLQJTA2RNZDPembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo1OLQJTA2RNZDPrefresh_preplay() {
+
+document.getElementById("cv_mo1OLQJTA2RNZDPchiDiv").innerHTML = document.getElementById("cv_mo1OLQJTA2RNZDPhiddenPre").innerHTML;
+};
+cv_mo1OLQJTA2RNZDPrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo1OLQJTA2RNZDPso;	   
+
+
+function cv_mo1OLQJTA2RNZDPloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo1OLQJTA2RNZDPso = new SWFObject(swfLocation, "cv_mo1OLQJTA2RNZDPAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo1OLQJTA2RNZDPso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo1OLQJTA2RNZDPso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo1OLQJTA2RNZDPso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo1OLQJTA2RNZDPso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo1OLQJTA2RNZDPso.setAttribute("height", swfHeight);
+          cv_mo1OLQJTA2RNZDPso.setAttribute("width", swfWidth);
+          cv_mo1OLQJTA2RNZDPso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo1OLQJTA2RNZDPso.write("cv_mo1OLQJTA2RNZDPflashcontent")) {
+          fp_resizePlayerSpace('cv_mo1OLQJTA2RNZDP', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo1OLQJTA2RNZDP';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo1OLQJTA2RNZDP', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo1OLQJTA2RNZDPloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo1OLQJTA2RNZDP";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "183-6005818-5300726";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1VUXZJ74OSLY4";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1VUXZJ74OSLY4";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R3DVTQNJMB9N5K";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1VUXZJ74OSLY4/183-6005818-5300726";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/183-6005818-5300726";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo1OLQJTA2RNZDPduration')) {
+      document.getElementById('cv_mo1OLQJTA2RNZDPduration').style.display='none';
+    }
+    cv_mo1OLQJTA2RNZDPloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo1OLQJTA2RNZDPloadSwf(movieID, playerVersion) {
+   return _cv_mo1OLQJTA2RNZDPloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo1OLQJTA2RNZDPnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo1OLQJTA2RNZDP', 0, h);
+}
+
+function cv_mo1OLQJTA2RNZDPresetPlayer(w,h,bw,cc) {
+  cv_mo1OLQJTA2RNZDPnewHeight(h);
+
+  cv_mo1OLQJTA2RNZDPso.addVariable("resetBandwidth", bw);
+  cv_mo1OLQJTA2RNZDPso.addVariable("cacheCode", cc);
+  cv_mo1OLQJTA2RNZDPso.setAttribute("height", h);
+  cv_mo1OLQJTA2RNZDPso.setAttribute("width", w);
+  cv_mo1OLQJTA2RNZDPso.write("cv_mo1OLQJTA2RNZDPflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo1OLQJTA2RNZDPRollOverImg = new Image();
+cv_mo1OLQJTA2RNZDPRollOverImg.src = "http://ecx.images-amazon.com/images/I/814CgdoaW6S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo1OLQJTA2RNZDPpreplay = document.getElementById('cv_mo1OLQJTA2RNZDPpreplayImageId');
+if (cv_mo1OLQJTA2RNZDPpreplay) {
+  cv_mo1OLQJTA2RNZDPpreplay.onmouseover = function() {
+    cv_mo1OLQJTA2RNZDPpreplay.src = "http://ecx.images-amazon.com/images/I/814CgdoaW6S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo1OLQJTA2RNZDPpreplay.onmouseout = function() {
+    cv_mo1OLQJTA2RNZDPpreplay.src = "http://ecx.images-amazon.com/images/I/814CgdoaW6S._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo1OLQJTA2RNZDPpreplay.parentNode;
+
+  var cv_mo1OLQJTA2RNZDPcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html/ref=cm_ciu_vr_mo1OLQJTA2RNZDP/183-6005818-5300726?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo1OLQJTA2RNZDPcurrentClick) {
+      return cv_mo1OLQJTA2RNZDPcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 5:06 MinsI mentioned it in the video portion of the review, but the first step to purchasing a Mac is to determine if you are ready to make the leap from the world of the PCs. Personally, for my day-to-day use (and creating video reviews for Amazon.com) I love using Macs. They are very intuitive - and importantly- they always seem to work. Rarely do programs randomly close down or does the computer just completely freeze.Now that is out of the way - why should you consider the 2.66GhZ MacBook Pro? Is it really worth the extra cost versus the Apple MacBook Pro MC374LL/A 13.3-Inch Laptop and the Apple MacBook Pro MC374LL/A 13.3-Inch Laptop? For me the answer was a (pretty) easy, yes. I love the increased speed in Video editing provided by the 4G of RAM (compared to the 2G on the standard Macbook) and the 2.66GHz Processor.A run down of the things I like about this model- The display is awesome - the LED screen is very crisp and uses less power.- Firewire port -- SD card reader - it comes in more handy than you might expect- 10 hours of battery life- The 4G of Ram helps with video processor and other memory intensive activities- Super Fast... programs open almost instantly.- I was able to load all of my old programs using Time Machine- Aluminum frame - I had some issues with the plastic on our previous Macbook- Very lightweight- The wireless N card seems to work much faster than the N card on our older Mac ...in truth, it seems like it help to expand the range of the router Apple AirPort Extreme Base Station (Simultaneous Dual-Band) (MC340LL/A)- I really do like the backlit keyboard - I know it seems like a minor thing, but we really do like it.- I do recommend purchasing the Apple Care. It is expensive but Apple customer service can not be matched.Final Verdict- While the Macbook Pros are more expensive than comparable laptops to me it does't make much of a difference - the Macbook Pros are worth it. They work perfectly out of the box and offer great performance. I really couldn't be happier5 Stars - No Second Thoughts on this Purchase

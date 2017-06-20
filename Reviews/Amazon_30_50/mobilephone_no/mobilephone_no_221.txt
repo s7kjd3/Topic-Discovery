@@ -1,0 +1,1 @@
+Tmobile says this phone is not "fully" unlocked.  Upon further investigation, the PIN and IMEI's are invalid, so no Blackberry Internet Services (email) and no UMA (wifi calling).  Looks like it's going to have to go back since these are important features for me.

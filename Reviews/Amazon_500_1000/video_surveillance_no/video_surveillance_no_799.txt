@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_moM3MU15V829ANembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_moM3MU15V829ANrefresh_preplay() {
+
+document.getElementById("cv_moM3MU15V829ANchiDiv").innerHTML = document.getElementById("cv_moM3MU15V829ANhiddenPre").innerHTML;
+};
+cv_moM3MU15V829ANrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_moM3MU15V829ANso;	   
+
+
+function cv_moM3MU15V829ANloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_moM3MU15V829ANso = new SWFObject(swfLocation, "cv_moM3MU15V829ANAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_moM3MU15V829ANso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_moM3MU15V829ANso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_moM3MU15V829ANso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_moM3MU15V829ANso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_moM3MU15V829ANso.setAttribute("height", swfHeight);
+          cv_moM3MU15V829ANso.setAttribute("width", swfWidth);
+          cv_moM3MU15V829ANso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_moM3MU15V829ANso.write("cv_moM3MU15V829ANflashcontent")) {
+          fp_resizePlayerSpace('cv_moM3MU15V829AN', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_moM3MU15V829AN';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_moM3MU15V829AN', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_moM3MU15V829ANloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_moM3MU15V829AN";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "mRLNEZF05ZQV4";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "mRLNEZF05ZQV4";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R3IGGSWP0C9CN3";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/mRLNEZF05ZQV4/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_moM3MU15V829ANduration')) {
+      document.getElementById('cv_moM3MU15V829ANduration').style.display='none';
+    }
+    cv_moM3MU15V829ANloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_moM3MU15V829ANloadSwf(movieID, playerVersion) {
+   return _cv_moM3MU15V829ANloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_moM3MU15V829ANnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_moM3MU15V829AN', 0, h);
+}
+
+function cv_moM3MU15V829ANresetPlayer(w,h,bw,cc) {
+  cv_moM3MU15V829ANnewHeight(h);
+
+  cv_moM3MU15V829ANso.addVariable("resetBandwidth", bw);
+  cv_moM3MU15V829ANso.addVariable("cacheCode", cc);
+  cv_moM3MU15V829ANso.setAttribute("height", h);
+  cv_moM3MU15V829ANso.setAttribute("width", w);
+  cv_moM3MU15V829ANso.write("cv_moM3MU15V829ANflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_moM3MU15V829ANRollOverImg = new Image();
+cv_moM3MU15V829ANRollOverImg.src = "http://ecx.images-amazon.com/images/I/81A2KhAs9mS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_moM3MU15V829ANpreplay = document.getElementById('cv_moM3MU15V829ANpreplayImageId');
+if (cv_moM3MU15V829ANpreplay) {
+  cv_moM3MU15V829ANpreplay.onmouseover = function() {
+    cv_moM3MU15V829ANpreplay.src = "http://ecx.images-amazon.com/images/I/81A2KhAs9mS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_moM3MU15V829ANpreplay.onmouseout = function() {
+    cv_moM3MU15V829ANpreplay.src = "http://ecx.images-amazon.com/images/I/81A2KhAs9mS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_moM3MU15V829ANpreplay.parentNode;
+
+  var cv_moM3MU15V829ANcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_moM3MU15V829ANcurrentClick) {
+      return cv_moM3MU15V829ANcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:38 MinsVIDEO of a TINY MOUSE (taken in Summer 2011 on the far SW Side of Chicago): The Bushnell Hunt Cam was set up on a tripod and caught this litte mouse snooping around the back of the neighbor's garage during the night. I prefer taking videos to see which way my nightly visitors go and how they behave. I've increased the length of the videos to 35-40 seconds which does eat into battery life a bit.  I have the cam set on high sensitivity and, on that setting, the Bushnell has picked up critters as small as this mouse in addition to raccoons, a possum, cats, chipmunks, birds and squirrels (during the day). Daytime videos could be a bit less grainy, sound could use some improvement and there is no moon phase or temperature stamp, only date & time. However, the camera takes FANTASTIC photos (I posted some at the top of the page when I had the camera set up to monitor the taking down of our huge old maple tree that carpenter ants had entirely hollowed out).My main reasons for deciding on the Bushnell were that it can be set up on a tripod to move around easily to different areas of the yard, that it has sound and that it picks up tiny creatures which a lot of the others do NOT (I tested others next to the Bushnell and they failed the small animal test)! So, I'm very happy with this hunt cam for my purpose of seeing who snoops thru my yard at night!!! :>)NOTE re the VIDEO: Use FULL screen when watching the video -- the mouse is so tiny. Also, when it disappears behind the garage for a second, it comes right back.The Bushnell was about 4-6 feet from the mouse and approx. a foot off the ground.

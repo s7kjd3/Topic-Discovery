@@ -1,0 +1,1 @@
+I will agree on HD space & battery.  The lockup issue can be fixed by a BIOS update, I had the same problem.  It took to 18 months before I updated the BIOS, I did not know there a fix.

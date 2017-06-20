@@ -1,0 +1,1 @@
+Given its age, the Laptop is still functioning as good as you could possibly hope for. There are current Linux distributions that support this model and are lightweight enough to run smoothly on it, for example Lubuntu 14.04. There is driver support for all major functionalities within Linux.

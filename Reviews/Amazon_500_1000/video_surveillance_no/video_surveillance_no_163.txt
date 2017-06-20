@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo2XVGMR9HK5HNembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo2XVGMR9HK5HNrefresh_preplay() {
+
+document.getElementById("cv_mo2XVGMR9HK5HNchiDiv").innerHTML = document.getElementById("cv_mo2XVGMR9HK5HNhiddenPre").innerHTML;
+};
+cv_mo2XVGMR9HK5HNrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo2XVGMR9HK5HNso;	   
+
+
+function cv_mo2XVGMR9HK5HNloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo2XVGMR9HK5HNso = new SWFObject(swfLocation, "cv_mo2XVGMR9HK5HNAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo2XVGMR9HK5HNso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo2XVGMR9HK5HNso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo2XVGMR9HK5HNso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo2XVGMR9HK5HNso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo2XVGMR9HK5HNso.setAttribute("height", swfHeight);
+          cv_mo2XVGMR9HK5HNso.setAttribute("width", swfWidth);
+          cv_mo2XVGMR9HK5HNso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo2XVGMR9HK5HNso.write("cv_mo2XVGMR9HK5HNflashcontent")) {
+          fp_resizePlayerSpace('cv_mo2XVGMR9HK5HN', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo2XVGMR9HK5HN';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo2XVGMR9HK5HN', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo2XVGMR9HK5HNloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo2XVGMR9HK5HN";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3KL3MPRYE883Z";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3KL3MPRYE883Z";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RNEMHCO00CFJL";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3KL3MPRYE883Z/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo2XVGMR9HK5HNduration')) {
+      document.getElementById('cv_mo2XVGMR9HK5HNduration').style.display='none';
+    }
+    cv_mo2XVGMR9HK5HNloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo2XVGMR9HK5HNloadSwf(movieID, playerVersion) {
+   return _cv_mo2XVGMR9HK5HNloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo2XVGMR9HK5HNnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo2XVGMR9HK5HN', 0, h);
+}
+
+function cv_mo2XVGMR9HK5HNresetPlayer(w,h,bw,cc) {
+  cv_mo2XVGMR9HK5HNnewHeight(h);
+
+  cv_mo2XVGMR9HK5HNso.addVariable("resetBandwidth", bw);
+  cv_mo2XVGMR9HK5HNso.addVariable("cacheCode", cc);
+  cv_mo2XVGMR9HK5HNso.setAttribute("height", h);
+  cv_mo2XVGMR9HK5HNso.setAttribute("width", w);
+  cv_mo2XVGMR9HK5HNso.write("cv_mo2XVGMR9HK5HNflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo2XVGMR9HK5HNRollOverImg = new Image();
+cv_mo2XVGMR9HK5HNRollOverImg.src = "http://ecx.images-amazon.com/images/I/81rHlz3RyOS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo2XVGMR9HK5HNpreplay = document.getElementById('cv_mo2XVGMR9HK5HNpreplayImageId');
+if (cv_mo2XVGMR9HK5HNpreplay) {
+  cv_mo2XVGMR9HK5HNpreplay.onmouseover = function() {
+    cv_mo2XVGMR9HK5HNpreplay.src = "http://ecx.images-amazon.com/images/I/81rHlz3RyOS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo2XVGMR9HK5HNpreplay.onmouseout = function() {
+    cv_mo2XVGMR9HK5HNpreplay.src = "http://ecx.images-amazon.com/images/I/81rHlz3RyOS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo2XVGMR9HK5HNpreplay.parentNode;
+
+  var cv_mo2XVGMR9HK5HNcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo2XVGMR9HK5HNcurrentClick) {
+      return cv_mo2XVGMR9HK5HNcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:41 MinsI bought for home so wife can be safe at home when im at works she loves it very much!!!!I have it hooked up to my pc to record everyday. a whole day only takes 1gb!!!!!The software i am using is FREE!!!! Open Broadcaster Software [...]Im also using a cheap capture usb card. http://www.amazon.com/EasyCAP-DC60-Creator-Capture-High-quality/dp/B002H3BSCMhook the a/v out on the 7inch monitor to EasyCAP DC60 and open free software open broadcaster software.to set it up go to here Open Broadcaster Software 32bit(1) settings tab and go to settings(1a) Encoding click x264 Click Box use cbr and enable cbr padding max birate 800audio encoding Codec AAC" @ 44.1khz  bitrate "160" Channel Stereo APPLY(2)Broadcast Settings- click mode file output only(3)file path- I use c:\Defender you can make a folder and call it anything you want to(4)start recording hot key i use "F10" you can use anything you like now hit apply(5)go video tab  and go to custom put your max pc monitor resolution -and go to resolution downscale and click on at least 800x600next to go Filter click on lanczos best detail 36 samples and where is says fps just type in 25 fps  Now Click apply(6) AUDIO tab. i left everything at default(7) Advance settings click the box where is says USE MULTITHREADED OPTMIZATIONS process priority class click normal  Next video x264 cpu preset i use medium settingsencoding profile should be "main"  Keyframe interval "2"click box Use CFR  now click apply and okNext your back at the main screen go to where is saysSCENES right click add scene enter any name press oknow under SOURCES right click add video caputer device and out a name press enternot choose OEM DEVICE thats EasyCAP DC60 you bought click ok start recording and right click on video capture device and go to position / size and click Fit To Screen and boom easy capture to pc

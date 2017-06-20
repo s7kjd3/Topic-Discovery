@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo2V6ASQNQEEKMVembeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo2V6ASQNQEEKMVrefresh_preplay() {
+
+document.getElementById("cv_mo2V6ASQNQEEKMVchiDiv").innerHTML = document.getElementById("cv_mo2V6ASQNQEEKMVhiddenPre").innerHTML;
+};
+cv_mo2V6ASQNQEEKMVrefresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo2V6ASQNQEEKMVso;	   
+
+
+function cv_mo2V6ASQNQEEKMVloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo2V6ASQNQEEKMVso = new SWFObject(swfLocation, "cv_mo2V6ASQNQEEKMVAMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo2V6ASQNQEEKMVso.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo2V6ASQNQEEKMVso.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo2V6ASQNQEEKMVso.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo2V6ASQNQEEKMVso.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo2V6ASQNQEEKMVso.setAttribute("height", swfHeight);
+          cv_mo2V6ASQNQEEKMVso.setAttribute("width", swfWidth);
+          cv_mo2V6ASQNQEEKMVso.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo2V6ASQNQEEKMVso.write("cv_mo2V6ASQNQEEKMVflashcontent")) {
+          fp_resizePlayerSpace('cv_mo2V6ASQNQEEKMV', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo2V6ASQNQEEKMV';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo2V6ASQNQEEKMV', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo2V6ASQNQEEKMVloadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo2V6ASQNQEEKMV";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1A231R1V50L5X";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m1A231R1V50L5X";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "RV2MEE08O0D3O";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1A231R1V50L5X/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo2V6ASQNQEEKMVduration')) {
+      document.getElementById('cv_mo2V6ASQNQEEKMVduration').style.display='none';
+    }
+    cv_mo2V6ASQNQEEKMVloadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo2V6ASQNQEEKMVloadSwf(movieID, playerVersion) {
+   return _cv_mo2V6ASQNQEEKMVloadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo2V6ASQNQEEKMVnewHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo2V6ASQNQEEKMV', 0, h);
+}
+
+function cv_mo2V6ASQNQEEKMVresetPlayer(w,h,bw,cc) {
+  cv_mo2V6ASQNQEEKMVnewHeight(h);
+
+  cv_mo2V6ASQNQEEKMVso.addVariable("resetBandwidth", bw);
+  cv_mo2V6ASQNQEEKMVso.addVariable("cacheCode", cc);
+  cv_mo2V6ASQNQEEKMVso.setAttribute("height", h);
+  cv_mo2V6ASQNQEEKMVso.setAttribute("width", w);
+  cv_mo2V6ASQNQEEKMVso.write("cv_mo2V6ASQNQEEKMVflashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo2V6ASQNQEEKMVRollOverImg = new Image();
+cv_mo2V6ASQNQEEKMVRollOverImg.src = "http://ecx.images-amazon.com/images/I/81kBbYWvufS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo2V6ASQNQEEKMVpreplay = document.getElementById('cv_mo2V6ASQNQEEKMVpreplayImageId');
+if (cv_mo2V6ASQNQEEKMVpreplay) {
+  cv_mo2V6ASQNQEEKMVpreplay.onmouseover = function() {
+    cv_mo2V6ASQNQEEKMVpreplay.src = "http://ecx.images-amazon.com/images/I/81kBbYWvufS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo2V6ASQNQEEKMVpreplay.onmouseout = function() {
+    cv_mo2V6ASQNQEEKMVpreplay.src = "http://ecx.images-amazon.com/images/I/81kBbYWvufS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo2V6ASQNQEEKMVpreplay.parentNode;
+
+  var cv_mo2V6ASQNQEEKMVcurrentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo2V6ASQNQEEKMVcurrentClick) {
+      return cv_mo2V6ASQNQEEKMVcurrentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 1:53 MinsBrief back story: My wife and I purchased this unit because I had some minor surgery having a mass removed at the ripe-old-age of 25 (please excuse my speech in the video if it isn't clear; the procedure was in my mouth).  For my recovery, my wife and I thought it would be nice to go ahead and pull the trigger on getting a bigger, nicer TV than the 32" we normally use.  We saw this unit on sale and decided we couldn't pass up such a great offer!  We received the unit on time, and instead of spending the day relaxing in front of our new TV ignoring the stitches in my mouth, I had to spend it trying to troubleshoot a busted TV, calling customer service, and writing a review to warn others of what I found out the hard way.  The silver lining is that getting so mad at receiving this bogus unit DID help me keep my mind off the (albeit mild) pain.  You do get what you pay for and this time it didn't work in my favor.Amazon agreed to send me another unit at the same "next day" shipping speed, but since it is Friday, I will have waited 4 days to receive my product that I originally ordered "next day".  Amazon was even kind enough to knock $40 off the $115 shipping price.  Amazon is doing a great job of making up for this poor TCL product.  I'll definitely being using Amazon again, but pending how good the replacement unit is, I don't expect to purchase another TCL product and will recommend the same to my friends and family.

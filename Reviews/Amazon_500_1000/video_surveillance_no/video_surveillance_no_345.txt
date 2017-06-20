@@ -1,0 +1,255 @@
+<!--
+
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+ 
+    } 
+
+
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h+"px";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h+"px";
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+  document.getElementById(nsPrefix + "flashcontent").style.height="100%";
+}
+
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+
+
+<!--
+
+function cv_mo27E4FA9C4QSA1embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+function cv_mo27E4FA9C4QSA1refresh_preplay() {
+
+document.getElementById("cv_mo27E4FA9C4QSA1chiDiv").innerHTML = document.getElementById("cv_mo27E4FA9C4QSA1hiddenPre").innerHTML;
+};
+cv_mo27E4FA9C4QSA1refresh_preplay();
+
+-->
+
+
+
+
+
+
+        // <![CDATA[
+
+var cv_mo27E4FA9C4QSA1so;	   
+
+
+function cv_mo27E4FA9C4QSA1loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+
+  try {
+      cv_mo27E4FA9C4QSA1so = new SWFObject(swfLocation, "cv_mo27E4FA9C4QSA1AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+
+      for (var v in swfParams) {
+        cv_mo27E4FA9C4QSA1so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_mo27E4FA9C4QSA1so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_mo27E4FA9C4QSA1so.setAttribute(v, embedAttributes[v]);
+      }
+
+      cv_mo27E4FA9C4QSA1so.addVariable("swfEmbedTime", new Date().getTime());
+
+      var agt = navigator.userAgent;
+       
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_mo27E4FA9C4QSA1so.setAttribute("height", swfHeight);
+          cv_mo27E4FA9C4QSA1so.setAttribute("width", swfWidth);
+          cv_mo27E4FA9C4QSA1so.addVariable("oldFirefox", "1");	     
+      }
+
+      if (cv_mo27E4FA9C4QSA1so.write("cv_mo27E4FA9C4QSA1flashcontent")) {
+          fp_resizePlayerSpace('cv_mo27E4FA9C4QSA1', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_mo27E4FA9C4QSA1';
+
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
+      }
+  } catch(err) {
+      fp_resizePlayerSpace('cv_mo27E4FA9C4QSA1', 0, 0);
+  }
+  return false;
+}
+
+
+
+function _cv_mo27E4FA9C4QSA1loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.115";
+    var bgColor = "#FFFFFF";
+
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.allowFullScreen = "true";
+    swfParams.telemetrySubPageType = "VideoReview";
+    swfParams.nsPrefix = "cv_mo27E4FA9C4QSA1";
+    swfParams.locale = "en_US";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.marketplaceID = "ATVPDKIKX0DER";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m3JIK79QKQL45C";
+    swfParams.autoPlayTimer = "";
+    swfParams.mediaObjectIDList = "m3JIK79QKQL45C";
+    swfParams.playIsUserGenerated = "1";
+    swfParams.enableShare = "0";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.telemetryPageTypeID = "R39Z964I0TMELR";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m3JIK79QKQL45C/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.allowFullScreen = "true";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    embedAttributes.title = "Flash Player";
+
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/legacy/20101014901/AMPlayerProd._V197491872_.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+
+    if (document.getElementById('cv_mo27E4FA9C4QSA1duration')) {
+      document.getElementById('cv_mo27E4FA9C4QSA1duration').style.display='none';
+    }
+    cv_mo27E4FA9C4QSA1loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+
+  return false;
+}
+
+function cv_mo27E4FA9C4QSA1loadSwf(movieID, playerVersion) {
+   return _cv_mo27E4FA9C4QSA1loadSwf(movieID, playerVersion);
+}
+
+
+	
+		// ]]>
+	
+
+<!--
+
+function cv_mo27E4FA9C4QSA1newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_mo27E4FA9C4QSA1', 0, h);
+}
+
+function cv_mo27E4FA9C4QSA1resetPlayer(w,h,bw,cc) {
+  cv_mo27E4FA9C4QSA1newHeight(h);
+
+  cv_mo27E4FA9C4QSA1so.addVariable("resetBandwidth", bw);
+  cv_mo27E4FA9C4QSA1so.addVariable("cacheCode", cc);
+  cv_mo27E4FA9C4QSA1so.setAttribute("height", h);
+  cv_mo27E4FA9C4QSA1so.setAttribute("width", w);
+  cv_mo27E4FA9C4QSA1so.write("cv_mo27E4FA9C4QSA1flashcontent");
+}
+
+-->
+
+
+
+
+
+
+
+
+var cv_mo27E4FA9C4QSA1RollOverImg = new Image();
+cv_mo27E4FA9C4QSA1RollOverImg.src = "http://ecx.images-amazon.com/images/I/91NrikLEjCS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+
+var cv_mo27E4FA9C4QSA1preplay = document.getElementById('cv_mo27E4FA9C4QSA1preplayImageId');
+if (cv_mo27E4FA9C4QSA1preplay) {
+  cv_mo27E4FA9C4QSA1preplay.onmouseover = function() {
+    cv_mo27E4FA9C4QSA1preplay.src = "http://ecx.images-amazon.com/images/I/91NrikLEjCS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_mo27E4FA9C4QSA1preplay.onmouseout = function() {
+    cv_mo27E4FA9C4QSA1preplay.src = "http://ecx.images-amazon.com/images/I/91NrikLEjCS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_OU01_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  
+  
+  var node = cv_mo27E4FA9C4QSA1preplay.parentNode;
+
+  var cv_mo27E4FA9C4QSA1currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8&p=CustomerImage&s=CustomerVideoPlay";
+      head[0].appendChild(logTag);
+    }
+
+    if (cv_mo27E4FA9C4QSA1currentClick) {
+      return cv_mo27E4FA9C4QSA1currentClick();
+    }
+  }
+}
+
+
+
+
+ Length:: 0:26 MinsI bought this little camera just because of the bad reviews.  I had to see how bad the quality of this camera could be for $30..I was expecting a lame experience and it wasnt, This little camera rocks!Its tiny for starters, the diameter of a quarter, and about the size of a small pill bottle with the stand attached. The receiver unit is small as well, about the size of a pack of cigarettes (a little bigger) and it receives audio and video via 2.4ghhz signal.  It has an old fashioned knob style tuning which is really cool i think.  You will get interference from internet routers and other 2.4 ghz wireless devices.  This camera does not have night vision so you cant see anything at night with it.  You can buy LED illuminators if need be.I plugged this thing into my front door area and i can see halfway down the block, i can clearly see people on the sidewalk and make and model of cars drving down my street.  yeah this wont look great when viewed on your 52" LCD TV, but for home security on the cheap, this can't be beat.  I'm buying 4 more this week i love them so much...In the video, you can hear the audio and see the slight interference in the video due to my router.  The camera is looking through my metal screen door and you can still see things clearly.  The further the camera is from the base unit the worse this gets.  In the video the distance from the cam to the base unit is about 10 feet.  but i put this camera at my neighbors house to test distance and i can clearly see the camera, even with interference, so i'm SUPER please with this little camera.
