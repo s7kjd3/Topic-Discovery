@@ -120,6 +120,10 @@ def filter_docs(corpus,  texts, labels, filenames, condition_on_doc):
     number_of_docs = len(corpus)
     corpus, texts,labels, filenames = zip(*((x, y,z,w) for x, y,z,w in zip(corpus, texts,labels, filenames) if len(x) > 0))
 
+    corpus = list(corpus)
+    labels = list(labels)
+    filenames = list(filenames)
+    texts = list(texts)
     print("{} docs removed".format(number_of_docs - len(corpus)))
 
     return corpus, texts, labels, filenames
