@@ -102,16 +102,8 @@ def filter_docs(corpus, texts, labels, filenames, condition_on_doc):
 
     number_of_docs = len(corpus)
 
-    for i in range(4):
-        tmp = texts
-        if i == 0:
-            corpus = [corpus for (corpus,tmp) in zip(corpus,tmp) if len(tmp) > 0]
-        if i == 1:
-            labels = [labels for (labels, tmp) in zip(labels, tmp) if len(tmp) > 0]
-        if i == 2:
-            filenames = [filenames for (filenames, tmp) in zip(filenames, tmp) if len(tmp) > 0]
-        if i == 3:
-            texts = [texts for (texts, tmp) in zip(texts, tmp) if len(tmp) > 0]
+    corpus, texts,labels, filenames = zip(*((x, y,z,w) for x, y,z,w in zip(corpus, texts,labels, filenames) if len(x) > 0))
+
 
     # if texts is not None:
     #     texts = [text for (text, doc) in zip(texts, corpus)
