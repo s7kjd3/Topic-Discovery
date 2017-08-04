@@ -45,6 +45,7 @@ import string
 from gensim import corpora
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download("wordnet")
 stop_words = stopwords.words('english')
 tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 reload(sys)
@@ -52,11 +53,7 @@ sys.setdefaultencoding('utf8')
 def get_data():
     targets = ['cameras','laptops','mobilephone','tablets','TVs','video_surveillance']
     path =['/home/flippped/Windows/Linux_Project/xiangmu/baseline/Reviews_test/cameras',
-           '/home/flippped/Windows/Linux_Project/xiangmu/baseline/Reviews_test/laptops',
-           '/home/flippped/Windows/Linux_Project/xiangmu/baseline/Reviews_test/mobilephone',
-           '/home/flippped/Windows/Linux_Project/xiangmu/baseline/Reviews_test/tablets',
-           '/home/flippped/Windows/Linux_Project/xiangmu/baseline/Reviews_test/TVs',
-           '/home/flippped/Windows/Linux_Project/xiangmu/baseline/Reviews_test/video_surveillance']
+           ]
     data = []
     target=[]
     filename = []
@@ -85,13 +82,14 @@ def preprocess(text):
     stop_free = " ".join([i for i in doc.lower().split() if i not in stop_words])
     punc_free = ''.join(ch for ch in stop_free if ch not in exclude)
     normalized = " ".join(lemma.lemmatize(word) for word in punc_free.split())
-    # doc = word_tokenize(doc)
+    print normalized
+    doc = word_tokenize(normalized)
     #doc = keras.preprocessing.text.Tokenizer(num_words=None,lower=True, split=" ").fit_on_texts(doc)
     #print doc
     #doc = [word for word in doc if word.isalpha()]
     # doc = [word for word in doc if word not in stop_words]
     #print doc
-    return normalized
+    return doc
 def get_corpus():
     #stemmer = PorterStemmer()
     data,target,filename = get_data()
@@ -109,7 +107,16 @@ def filter_docs(corpus, texts, labels, filenames, condition_on_doc):
 
     number_of_docs = len(corpus)
 
-    corpus, texts,labels, filenames = zip(*((x, y,z,w) for x, y,z,w in zip(corpus, texts,labels, filenames) if len(x) > 0))
+    for i in range(4):
+        tmp = texts
+        if i == 0:
+            corpus = [corpus for (corpus,tmp) in zip(corpus,tmp) if len(tmp) > 0]
+        if i == 1:
+            labels = [labels for (labels, tmp) in zip(labels, tmp) if len(tmp) > 0]
+        if i == 2:
+            filenames = [filenames for (filenames, tmp) in zip(filenames, tmp) if len(tmp) > 0]
+        if i == 3:
+            texts = [texts for (texts, tmp) in zip(texts, tmp) if len(tmp) > 0]
 
 
     print("{} docs removed".format(number_of_docs - len(corpus)))
@@ -127,9 +134,10 @@ def LDA_model():
     doc_term_matrix, dictionary, target, filenames = document_matrix()
     Lda = gensim.models.LdaModel
     # Running and Trainign LDA model on the document term matrix.
-    ldamodel = Lda(doc_term_matrix, num_topics=5, id2word=dictionary, passes=50)
-
-    print (ldamodel.print_topics(num_topics=5,num_words=5))
+    ldamodel = Lda(doc_term_matrix, num_topics=2, id2word=dictionary, passes=50)
+    # for i in ldamodel.print_topics(num_words=10):
+    #     print i
+    print (ldamodel.print_topics(num_words=25))
 
 def main():
     LDA_model()
